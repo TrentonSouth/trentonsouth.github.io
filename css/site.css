@@ -37,6 +37,7 @@ main {
    top: 15px;
    left:590px;
    border-radius:10px;
+   width:200px;
 }
 #portal {
    margin-left:30px;
