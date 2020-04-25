@@ -18,6 +18,9 @@ header, footer {
    padding:20px;
 }
 
+footer {
+   font-size:.8em;
+}
 main {
    background-color: #FBFBFB;
    border: solid thick #03175B;
