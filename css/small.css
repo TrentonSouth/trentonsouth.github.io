@@ -5,46 +5,37 @@ body {
 h1 {
    text-align: center;
    padding-top:20px;
+   font-size: 1.25em;
 }
 h2 {
-   font-size:1.3em;
+   font-size: 1em;
 }
-header {
+header, footer {
    background-color:#03175B;
-   height:75px;
-   border-radius: 25px 25px 0 0;
    color:#FBFBFB;
-   position:relative;
-}
-footer {
-   background-color:#03175B;
-   height:75px;
-   border-radius: 0 0 25px 25px;
-   color: #FBFBFB;
+   min-height:75px;
    text-align:center;
-   padding-top: 25px;
+   padding:20px;
 }
+
 main {
    background-color: #FBFBFB;
    border: solid thick #03175B;
 }
 #content {
-   width:800px;
+   max-width:800px;
    margin: 100px auto 0 auto;
 }
-#profile {
-   position:absolute;
-   top: 15px;
-   left:590px;
-   border-radius: 0 10px 0 0;
+#profile_picture {
    width:200px;
+   margin:15px;
 }
 #portal {
    margin-left:30px;
 }
 #portal_hr {
    margin-left:30px;
-   width:700px;
+   width:80%;
 }
 #updated {
    color: yellow;
