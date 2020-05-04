@@ -5,7 +5,7 @@ body {
 header {
    display: grid;
    grid-template-columns: 100px 1fr;
-   grid-template-rows: 40px 40px 40px 40px;   
+   grid-template-rows: 50px 30px 30px 150px;   
 }
 label {
    font-weight: bold;
@@ -53,4 +53,24 @@ nav li a:hover {
    grid-column: 2;
    grid-row: 1;
    text-align: center;
+}
+.persona {
+   margin-top:20px;
+}
+.persona table {
+   border:solid thin black;
+   border-collapse: collapse;
+}
+.persona td {
+   border: solid thin gray;
+   padding: 5px;
+}
+.persona_photo {
+   width: 150px;
+}
+.persona th {
+   background-color:#e3d8d1;
+   text-align: left;
+   border: solid thin gray;
+   padding: 5px;
 }
