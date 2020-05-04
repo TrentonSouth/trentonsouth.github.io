@@ -1,0 +1,21 @@
+@media only screen and (min-width: 480px) { 
+   header {
+      grid-template-columns: 200px 1fr;
+   }
+   nav {
+   }
+   nav ul {
+      display: flex;
+   }
+   nav li {
+      flex: 1 1 100%;
+      margin: 0px;
+   }
+   #content {
+      max-width: 900px;
+      margin: auto;
+   }
+   #logo {
+      width:200px;
+   }
+}
