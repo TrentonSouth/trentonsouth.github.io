@@ -1,4 +1,7 @@
 @media only screen and (min-width: 480px) { 
+   body {
+      padding: 0 10px 0 10px;
+   }
    header {
       grid-template-columns: 200px 1fr;
       grid-template-rows: 40px 40px 40px 40px;  
