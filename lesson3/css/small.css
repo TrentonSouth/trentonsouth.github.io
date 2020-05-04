@@ -46,6 +46,9 @@ nav li a:hover {
 #byui_link {
    color:white;
 }
+#colors {
+   width: 100%;
+}
 #logo {
    width:100px;
    grid-column: 1;
