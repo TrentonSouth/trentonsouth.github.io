@@ -63,11 +63,6 @@ nav li a:hover {
 #fonts_table td {
    padding:5px;
 }
-#logo {
-   width:100px;
-   grid-column: 1;
-   grid-row: 1/5;
-}
 
 #motto {
    grid-column: 2;
@@ -81,6 +76,11 @@ nav li a:hover {
 }
 #updated {
    color: #fff800;
+}
+.logo {
+   width:100px;
+   grid-column: 1;
+   grid-row: 1/5;
 }
 .persona {
    margin-top:20px;
