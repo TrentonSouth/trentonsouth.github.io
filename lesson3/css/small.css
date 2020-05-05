@@ -2,6 +2,9 @@ body {
    font-family: 'M PLUS Rounded 1c', sans-serif;
    font-size: 14px;
 }
+h1,h2,h3 {
+   font-family: 'Bree Serif', serif;
+}
 header {
    display: grid;
    grid-template-columns: 100px 1fr;
@@ -48,6 +51,9 @@ nav li a:hover {
 }
 #colors {
    width: 100%;
+}
+#fonts_table td {
+   padding:5px;
 }
 #logo {
    width:100px;
