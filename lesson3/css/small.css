@@ -5,6 +5,12 @@ body {
 h1,h2,h3 {
    font-family: 'Bree Serif', serif;
 }
+h1 {
+   font-size: 1.5em;
+}
+h2 {
+   font-size: 1.25em;
+}
 header {
    display: grid;
    grid-template-columns: 100px 1fr;
@@ -51,6 +57,9 @@ nav li a:hover {
 }
 #colors {
    width: 100%;
+}
+#content {
+   padding:10px;
 }
 #fonts_table td {
    padding:5px;
