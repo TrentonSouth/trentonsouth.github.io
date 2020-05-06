@@ -76,6 +76,9 @@ nav li a:hover {
    background-color: #1469e2;
    color: white;
 }
+#sitemap {
+   width: 100%;
+}
 #title {
    margin-top: 15px;
    grid-column: 2;
