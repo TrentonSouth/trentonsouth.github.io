@@ -2,16 +2,14 @@ body {
    font-family: 'M PLUS Rounded 1c', sans-serif;
    font-size: 14px;
 }
-h1,h2,h3 {
+h1,h2,h3, #title, #motto {
    font-family: 'Bree Serif', serif;
 }
-h1 {
+h1, #title {
    font-size: 1.5em;
 }
-h2 {
-   font-size: 1.25em;
-}
-h2 {
+
+h2, #motto {
    font-size: 1.1em;
 }
 header {
@@ -68,18 +66,22 @@ nav li a:hover {
 }
 
 #motto {
+   margin-top: 5px;
    grid-column: 2;
    grid-row: 2;
    text-align: center;
+   color: gray;
 }
 #nav_typography {
    background-color: #1469e2;
    color: white;
 }
 #title {
+   margin-top: 15px;
    grid-column: 2;
    grid-row: 1;
    text-align: center;
+   color:gray;
 }
 #typography_table {
    border-collapse: collapse;
@@ -95,7 +97,7 @@ nav li a:hover {
    transform: scale(1.1);
 }
 .logo {
-   width:100px;
+   width: 100px;
    grid-column: 1;
    grid-row: 1/5;
 }

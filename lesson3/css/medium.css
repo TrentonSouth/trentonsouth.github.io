@@ -2,10 +2,10 @@
    body {
       padding: 0 10px 0 10px;
    }
-   h1 {
+   h1, #title {
       font-size: 1.75em;
    }
-   h2 {
+   h2, #motto {
       font-size: 1.25em;
    }
    header {
