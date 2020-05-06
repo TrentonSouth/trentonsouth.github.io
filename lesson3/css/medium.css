@@ -23,15 +23,8 @@
       max-width: 900px;
       margin: auto;
    }
-   #sitemap {
-      display: block;
-      width: 100%;
-   }
    #title {
       font-size: 2em;
-   }
-   #vsitemap {
-      display:none;
    }
    .logo {
       width:200px;
