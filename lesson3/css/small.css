@@ -1,7 +1,4 @@
-* {
-   margin: 0;
-   padding: 0;
- }
+
 body {
    font-family: 'M PLUS Rounded 1c', sans-serif;
    font-size: 14px;
@@ -56,6 +53,10 @@ nav li a:hover {
    color: #fff800;
    transform: scale(1.1);
 }
+ul {
+   margin: 0;
+   padding: 0;
+ }
 #byui_link {
    color:white;
 }
