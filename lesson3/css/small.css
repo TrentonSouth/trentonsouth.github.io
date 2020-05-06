@@ -104,6 +104,9 @@ nav li a:hover {
    grid-column: 1;
    grid-row: 1/5;
 }
+.sitemap {
+   display: none;
+}
 .page_title {
    text-align: center;
 }
