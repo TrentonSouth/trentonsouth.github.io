@@ -99,6 +99,9 @@ nav li a:hover {
    grid-column: 1;
    grid-row: 1/5;
 }
+.page_title {
+   text-align: center;
+}
 .persona {
    margin-top:20px;
 }
