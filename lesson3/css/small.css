@@ -4,7 +4,6 @@ body {
 }
 h1,h2,h3, #title, #motto {
    font-family: 'Bree Serif', serif;
-   text-align: center;
 }
 h1, #title {
    font-size: 1.5em;
