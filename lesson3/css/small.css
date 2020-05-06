@@ -4,6 +4,7 @@ body {
 }
 h1,h2,h3, #title, #motto {
    font-family: 'Bree Serif', serif;
+   text-align: center;
 }
 h1, #title {
    font-size: 1.5em;
@@ -15,7 +16,7 @@ h2, #motto {
 header {
    display: grid;
    grid-template-columns: 100px 1fr;
-   grid-template-rows: 50px 30px 30px 150px;   
+   grid-template-rows: 50px 30px 30px 200px;   
 }
 footer {
    background-color:#1469e2;
