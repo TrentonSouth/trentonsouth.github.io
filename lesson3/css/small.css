@@ -51,7 +51,6 @@ nav li a:hover {
    display: block;
    text-decoration: none;
    color: #fff800;
-   transform: scale(1.1);
 }
 nav ul {
    margin: 0;

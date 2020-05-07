@@ -19,6 +19,9 @@
       flex: 1 1 100%;
       margin: 0px;
    }
+   nav li a:hover {
+      transform: scale(1.1);
+   }
    #content {
       max-width: 900px;
       margin: auto;
