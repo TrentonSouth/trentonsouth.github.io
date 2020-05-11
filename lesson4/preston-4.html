@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 2 - Design Principles = Three examples of web design principles">
+  <title>Website Planning</title>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif%7cM+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+   <div id="content">
+   <header>
+      <img alt="Logo" class="logo" src="./images/logo.png">
+      <div id="title">Unlimited Weather</div>
+      <div id="motto">Know before you go!</div>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button">&#9776 Menu</button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a href="./">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="./">Soda Springs</a></li>
+            <li><a href="./">Fish Haven</a></li>
+            <li><a href="./">Storm Center</a></li>
+            <li><a href="./">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <h1 class="page_title">Preston</h1>
+      <div class="placeholder">Weather Summary on Hero Image</div>
+      <div class="placeholder">5 Day Forecast</div>
+      <div class="placeholder">Article</div>
+      <div class="placeholder">Map & Contact Info</div>
+   </main>   
+   <footer>
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      <span id="updated"></span>
+   </footer>
+</div>
+<script src="./js/site.js"></script>
+</body>
+</html>

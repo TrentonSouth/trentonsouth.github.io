@@ -1,0 +1,42 @@
+@media only screen and (min-width: 560px) { 
+   body {
+      padding: 0 10px 0 10px;
+   }
+   h1 {
+      font-size: 1.75em;
+   }
+   h2, #motto {
+      font-size: 1.25em;
+   }
+   header {
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 40px 40px 40px 60px;  
+   }
+   nav ul {
+      display: flex;
+   }
+   nav li {
+      flex: 1 1 100%;
+      margin: 0px;
+   }
+   nav li a:hover {
+      transform: scale(1.1);
+   }
+   #content {
+      max-width: 900px;
+      margin: auto;
+   }
+   #menu_button {
+      display: none;
+   }
+   .nav_hidden {
+      display: flex;
+   }
+   #title {
+      font-size: 2em;
+   }
+   .logo {
+      width:200px;
+   }
+
+}
