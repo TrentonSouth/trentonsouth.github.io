@@ -12,6 +12,9 @@
       grid-template-columns: 1fr 200px 300px 200px 1fr;
       grid-template-rows: 40px 40px 40px 60px;  
    }
+   nav {
+      grid-column: 1 / 5;
+   }
    nav ul {
       display: flex;
    }
