@@ -111,7 +111,7 @@ nav ul {
 
 #logo {
    width: 100px;
-   grid-column: 2;
+   grid-column: 1;
    grid-row: 1/5;
 }
 .nav_hidden {
