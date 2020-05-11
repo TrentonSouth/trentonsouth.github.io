@@ -1,4 +1,4 @@
-@media only screen and (min-width: 560px) { 
+@media only screen and (min-width: 570px) { 
    body {
       padding: 0 10px 0 10px;
    }
@@ -17,6 +17,7 @@
    }
    nav li {
       flex: 1 1 100%;
+      border: none;
       margin: 0px;
    }
    nav li a:hover {
