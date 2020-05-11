@@ -93,6 +93,15 @@ nav ul {
    color: #fff800;
 }
 
+.active {
+   background-color: #fff800;
+   color: black;
+   font-weight: bold;
+}
+.active:hover {
+   color: black;
+}
+
 .logo {
    width: 100px;
    grid-column: 1;
