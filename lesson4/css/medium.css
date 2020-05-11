@@ -9,7 +9,7 @@
       font-size: 1.25em;
    }
    header {
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 1fr 200px 300px 1fr;
       grid-template-rows: 40px 40px 40px 60px;  
    }
    nav ul {
@@ -27,6 +27,9 @@
       max-width: 900px;
       margin: auto;
    }
+   #logo {
+      width:200px;
+   }
    #menu_button {
       display: none;
    }
@@ -35,9 +38,6 @@
    }
    #title {
       font-size: 2em;
-   }
-   .logo {
-      width:200px;
    }
 
 }
