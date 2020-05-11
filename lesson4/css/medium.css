@@ -33,6 +33,13 @@
    #menu_button {
       display: none;
    }
+   #motto {
+      grid-column: 3;
+   }
+   
+   #title {
+      grid-column: 3;
+   }
    .nav_hidden {
       display: flex;
    }
