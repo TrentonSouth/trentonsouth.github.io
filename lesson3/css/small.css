@@ -48,8 +48,6 @@ nav li a {
 }
 
 nav li a:hover {
-   display: block;
-   text-decoration: none;
    color: #fff800;
 }
 nav ul {
