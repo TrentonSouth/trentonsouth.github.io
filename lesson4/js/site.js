@@ -5,7 +5,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June","July
 const dayName = days[date.getDay()];
 const monthName = monthNames[date.getMonth()];
 const year = date.getFullYear();
-document.getElementById("today").innerHTML = dayName + ', ' + monthName + ' ' + date.getDate() + ', ' + year;
+document.getElementById("today").innerHTML = dayName + ', ' + date.getDate() + ' ' + monthName  + ' ' + year;
 document.getElementById("year").innerHTML = year;
 
 function toggle_nav() {
