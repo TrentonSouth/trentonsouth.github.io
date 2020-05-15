@@ -8,6 +8,11 @@ const year = date.getFullYear();
 document.getElementById("today").innerHTML = dayName + ', ' + date.getDate() + ' ' + monthName  + ' ' + year;
 document.getElementById("year").innerHTML = year;
 
+if(dayName == 'Friday') {
+   document.getElementById("alert").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+   document.getElementById("alert").classList.add("show");
+}
+
 function toggle_nav() {
    document.getElementById("main_nav").classList.toggle("nav_hidden");
 }

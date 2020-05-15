@@ -71,6 +71,15 @@ nav ul {
    margin: 0;
    padding: 0;
  }
+ #alert {
+   display: none;
+   background-color: #fff800;
+   color: black;
+   text-align: center;
+}
+#alert.show {
+   display:block;
+}
 #article-content {
    grid-column: 1 / 3;
 }
