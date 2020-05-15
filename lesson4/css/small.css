@@ -81,7 +81,7 @@ nav ul {
    grid-column: 2;
    grid-row: 2;
    text-align: center;
-   color: gray;
+   color: rgb(70, 70, 70);
 }
 
 #title {
@@ -89,7 +89,7 @@ nav ul {
    grid-column: 2;
    grid-row: 1;
    text-align: center;
-   color:gray;
+   color: rgb(70, 70, 70);
 }
 #today {
    display: block;
