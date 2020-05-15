@@ -1,0 +1,73 @@
+@media only screen and (min-width: 570px) { 
+   h1 {
+      font-size: 1.75em;
+   }
+   h2, #motto {
+      font-size: 1.25em;
+   }
+   header {
+      grid-template-columns: 1fr 200px 300px 200px 1fr;
+      grid-template-rows: 40px 40px 40px 60px;  
+   }
+   nav {
+      grid-column: 1 / 6;
+   }
+   nav ul {
+      display: flex;
+   }
+   nav li {
+      flex: 1 1 100%;
+      border: none;
+      margin: 0px;
+   }
+   nav li a:hover {
+      transform: scale(1.1);
+   }
+   #article-content {
+      grid-column: 1;
+   }
+   #article-image {
+      grid-column: 2;
+      padding: 15px;
+   }
+   #content {
+      max-width: 900px;
+      margin: auto;
+   }
+   #contact-info {
+      grid-column: 2;
+      grid-row: 1
+   }
+   #forecast {
+      display: block;
+   }
+   #logo {
+      grid-column: 2;
+      width:200px;
+   }
+   #map {
+      grid-column: 1;
+      grid-row: 1;
+   }
+   #menu_button {
+      display: none;
+   }
+   #motto {
+      grid-column: 3;
+   }
+   
+   #title {
+      grid-column: 3;
+      font-size: 2em;
+   }
+   #weather-summary {
+      width: 30%;
+      font-size: 1em;
+      background-color: white;
+      padding: 10px;
+   }
+   .nav_hidden {
+      display: flex;
+   }
+
+}

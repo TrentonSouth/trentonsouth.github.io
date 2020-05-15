@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 5 - Preston Page">
+  <title>Unlimited Weather - Preston</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif%7cM+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+   <header>
+      <img alt="Logo" id="logo" src="./images/logo.png">
+      <div id="title">Unlimited Weather</div>
+      <div id="motto">Know before you go!</div>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button">&#9776; Menu</button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="#">Home</a></li>
+            <li><a class="active" title="Preston" href="./preston-5.html">Preston</a></li>
+            <li><a title="Soda Springs" href="#">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="#">Fish Haven</a></li>
+            <li><a title="Storm Center" href="#">Storm Center</a></li>
+            <li><a title="Gallery" href="#">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <h1 class="page_title">Preston</h1>
+      <section id="hero">
+         <img title="Hero Image" src="images/clouds.jpg">
+         <div id="weather-summary">
+            <h3>Weather Summary</h3>
+            <p>Summary line one</p>
+            <p>Summary line two</p>
+            <p>Summary line three</p>
+            <p>Summary line four</p>
+         </div>
+      </section>
+      <section id="forecast">
+         <h3>5 Day Forecast</h3>
+         <div class="placeholder">Day 1</div>
+         <div class="placeholder">Day 2</div>
+         <div class="placeholder">Day 3</div>
+         <div class="placeholder">Day 4</div>
+         <div class="placeholder">Day 5</div>
+      </section>
+      <article>
+         <div id="article-content">
+            <h3>Article Title</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi dui. Nunc faucibus odio vel odio ultricies, nec pretium metus consequat. Praesent vel sollicitudin lacus. Etiam tempus risus et tincidunt euismod. Sed ac gravida quam. Integer sit amet ante sit amet leo sollicitudin imperdiet et suscipit nisl. Aenean eu elit mollis ex congue rhoncus. Pellentesque fermentum ut dolor at eleifend. Ut tortor tellus, facilisis vitae nibh sit amet, placerat tristique mauris. Nulla egestas fermentum ligula non scelerisque. Mauris ut libero ultrices, aliquam velit dignissim, ultricies libero. Praesent vestibulum nulla tellus, id luctus nulla malesuada ut. Suspendisse potenti. Nam mollis luctus urna quis dapibus. Proin sit amet neque at quam maximus ultrices. Nunc non ex sed sapien ultricies scelerisque.
+
+            In pretium augue ut ante faucibus aliquet. Suspendisse maximus purus quis lorem vehicula, ac tincidunt turpis dapibus.
+         </div>
+         <img id="article-image" src="./images/preston-article.jpg">
+      </article>
+      <section id="map-info">
+         <img id="map" title="Preston Map" src="images/preston-map.jpg">
+         <div id="contact-info">
+            <h3>Contact Info</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi dui. 
+               Nunc faucibus odio vel odio ultricies, nec pretium metus consequat.</p>
+         </div>
+      </section>
+   </main>   
+   <footer>
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      <span id="today"></span>
+   </footer>
+<script src="./js/site.js"></script>
+</body>
+</html>
