@@ -8,6 +8,7 @@ article {
 body {
    font-family: 'M PLUS Rounded 1c', sans-serif;
    font-size: 14px;
+   background-color:whitesmoke;
 }
 h1,h2,h3, #title, #motto {
    font-family: 'Bree Serif', serif;
