@@ -16,3 +16,8 @@ if(dayName == 'Friday') {
 function toggle_nav() {
    document.getElementById("main_nav").classList.toggle("nav_hidden");
 }
+
+function initMap() {
+   let preston = {lat: 42.0974857, lng: -111.8788433};
+   let map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: preston});
+}
