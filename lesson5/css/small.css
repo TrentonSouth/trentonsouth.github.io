@@ -167,8 +167,8 @@ nav ul {
    background-color: white;
    padding: 10px;
    border-radius: 10px;
-   background: rgb(145,171,186);
-   background: linear-gradient(160deg, rgba(145,171,186,1) 0%, rgba(67,134,160,1) 73%);
+   background: rgb(237,242,245);
+   background: linear-gradient(160deg, rgba(237,242,245,1) 0%, rgba(67,134,160,1) 73%);
 }
 .active {
    background-color: #fff800;
