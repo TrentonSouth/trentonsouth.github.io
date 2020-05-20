@@ -94,6 +94,11 @@ nav ul {
 #byui_link {
    color:white;
 }
+#close {
+   font-size: 1.4em;
+   position: relative;
+   left: -75px;
+}
 #colors {
    width: 100%;
 }
@@ -181,6 +186,16 @@ nav ul {
 }
 .active:hover {
    color: black;
+}
+.fade_in {
+   visibility: visible;
+   opacity: 1;
+   transition: opacity ,5s linear; 
+}
+.fade_out {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s .5s, opacity .5s linear;   
 }
 .nav_hidden {
    display: none;

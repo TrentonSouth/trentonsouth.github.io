@@ -15,6 +15,10 @@ if(dayName == 'Friday') {
 
 function toggle_nav() {
    document.getElementById("main_nav").classList.toggle("nav_hidden");
+   document.getElementById("ham").classList.toggle("fade_out");
+   document.getElementById("ham").classList.toggle("fade_in");
+   document.getElementById("close").classList.toggle("fade_out");
+   document.getElementById("close").classList.toggle("fade_in");
 }
 
 function initMap() {
