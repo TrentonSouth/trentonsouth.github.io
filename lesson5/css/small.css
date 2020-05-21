@@ -132,6 +132,7 @@ nav ul {
    width: 80%;
    height: 200px;
    padding: 25px;
+   margin: 0 auto 0 auto;
 }
 #map-info {
    display: grid;
@@ -190,12 +191,12 @@ nav ul {
 .fade_in {
    visibility: visible;
    opacity: 1;
-   transition: opacity ,5s linear; 
+   transition: opacity, .25s linear; 
 }
 .fade_out {
    visibility: hidden;
    opacity: 0;
-   transition: visibility 0s .5s, opacity .5s linear;   
+   transition: visibility 0s .25s, opacity .25s linear;   
 }
 .nav_hidden {
    display: none;
