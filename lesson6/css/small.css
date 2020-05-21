@@ -170,6 +170,7 @@ nav ul {
 }
 #weather-summary {
    position: absolute;
+   line-height: 10px;
    top: 30px;
    left: 30px;
    width: 50%;
