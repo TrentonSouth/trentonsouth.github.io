@@ -33,7 +33,11 @@
    <main>
       <h1 class="page_title">Preston</h1>
       <section id="hero">
-         <img alt="Clouds" title="Hero Image" src="images/clouds.jpg">
+         <picture id="hero">
+            <source media="(max-width: 400px)" srcset="./images/400.jpg">
+            <source media="(max-width: 800px)" srcset="./images/800.jpg">
+            <img src="./Images/1200.jpg" alt="Preston Landscape">
+        </picture>
          <div id="weather-summary">
             <h3>Weather Summary</h3>
             <p>Summary line one</p>
