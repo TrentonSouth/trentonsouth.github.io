@@ -39,10 +39,11 @@
         </picture>
          <div id="weather-summary">
             <h3>Weather Summary</h3>
-            <p>Summary line one</p>
-            <p>Summary line two</p>
-            <p>Summary line three</p>
-            <p>Summary line four</p>
+            <p>Currently: Snowing</p>
+            <p>High: <span id="hightemp">24</span>&#8457;</p>
+            <p>Wind Chill: <span id="windchill"></span>&#8457;</p>
+            <p>Humidity: 94%</p>
+            <p>Wind Speed: <span id="windspeed">10</span> mph</p>
          </div>
       </section>
       <section id="forecast">
@@ -81,6 +82,7 @@
    </footer>
    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7futJ8PvCwb-_TD6pzqorZfqzJ2L6LIE&callback=initMap"></script>
    <script src="./js/site.js"></script>
+   <script src="./js/windchill.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
    <script>
       WebFont.load({
