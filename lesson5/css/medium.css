@@ -95,7 +95,7 @@
    }
    .weather_icon {
       width:90%;
-      max-width: 90px;
+      max-width: 80px;
    }
    .weather_icon_div {
       text-align: center;
