@@ -65,7 +65,7 @@ function buildForecast() {
       abbrMonth4 = month < 11 ? monthAbbrNames[month] : monthAbbrNames[0];
    }
    if (dom + 5 <= daysInMonth) {
-      day5 = dom + 1;
+      day5 = dom + 5;
       abbrMonth5 =  monthAbbrNames[month]
    } else {
       day5 = dom + 5 - daysInMonth;
