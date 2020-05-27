@@ -41,35 +41,35 @@ function buildForecast() {
       abbrMonth1 =  monthAbbrNames[month]
    } else {
       day1 = dom + 1 - daysInMonth;
-      abbrMonth1 = month < 11 ? monthAbbrNames[month] : monthAbbrNames[0];
+      abbrMonth1 = month < 11 ? monthAbbrNames[month+1] : monthAbbrNames[0];
    }
    if (dom + 2 <= daysInMonth) {
       day2 = dom + 2;
       abbrMonth2 =  monthAbbrNames[month]
    } else {
       day2 = dom + 2 - daysInMonth;
-      abbrMonth2 = month < 11 ? monthAbbrNames[month] : monthAbbrNames[0];
+      abbrMonth2 = month < 11 ? monthAbbrNames[month+1] : monthAbbrNames[0];
    }
    if (dom + 3 <= daysInMonth) {
       day3 = dom + 3;
       abbrMonth3 =  monthAbbrNames[month]
    } else {
       day3 = dom + 3 - daysInMonth;
-      abbrMonth3 = month < 11 ? monthAbbrNames[month] : monthAbbrNames[0];
+      abbrMonth3 = month < 11 ? monthAbbrNames[month+1] : monthAbbrNames[0];
    }
    if (dom + 4 <= daysInMonth) {
       day4 = dom + 4;
       abbrMonth4 =  monthAbbrNames[month]
    } else {
       day4= dom + 4 - daysInMonth;
-      abbrMonth4 = month < 11 ? monthAbbrNames[month] : monthAbbrNames[0];
+      abbrMonth4 = month < 11 ? monthAbbrNames[month+1] : monthAbbrNames[0];
    }
    if (dom + 5 <= daysInMonth) {
       day5 = dom + 5;
       abbrMonth5 =  monthAbbrNames[month]
    } else {
       day5 = dom + 5 - daysInMonth;
-      abbrMonth5 = month < 11 ? monthAbbrNames[month] : monthAbbrNames[0];
+      abbrMonth5 = month < 11 ? monthAbbrNames[month+1] : monthAbbrNames[0];
    }
 
    document.getElementById('forecast1').innerHTML = buildForecastDay(day1, abbrMonth1, 'cloudy.jpg', 'Cloudy', 27);
