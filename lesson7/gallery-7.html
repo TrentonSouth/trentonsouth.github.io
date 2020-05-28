@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 6 - Preston Page">
+  <title>Unlimited Weather - Preston</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+   <div id="alert"></div>
+   <header>
+      <img alt="Logo" id="logo" src="./images/logo.png">
+      <div id="title">Unlimited Weather</div>
+      <div id="motto">Know before you go!</div>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="#">Home</a></li>
+            <li><a title="Preston" href="./preston-6.html">Preston</a></li>
+            <li><a title="Soda Springs" href="#">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="#">Fish Haven</a></li>
+            <li><a title="Storm Center" href="#">Storm Center</a></li>
+            <li><a class="active" title="Gallery" href="#">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+<div id="gallery-images">
+   <figure>
+      <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/foggy_mountain_400.jpg">
+      <figcaption>Foggy Mountain Top</figcaption>
+   </figure>
+   <figure>
+      <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/hurricane_400.jpg">
+      <figcaption>Hurricane</figcaption>
+   </figure>
+   <figure>
+      <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/lightning1_400.jpg">
+      <figcaption>Lightning</figcaption>
+   </figure>
+   <figure>
+      <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/lightning2_400.jpg">
+      <figcaption>Lightning</figcaption>
+   </figure>
+   <figure> 
+      <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/rainbow_400.jpg">
+      <figcaption>Rainbow</figcaption>
+   </figure>
+   <figure> 
+      <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/snow_mountain_400.jpg">
+      <figcaption>Snowy Mountain</figcaption>
+   </figure>
+    <figure> 
+       <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/snow2_400.jpg">
+       <figcaption>Snowfall</figcaption>
+    </figure>
+       <figure>
+          <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/snowing_400.jpg">
+          <figcaption>Snowing</figcaption>
+       </figure>
+        <figure>
+           <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/storm_chasing_400.jpg">
+           <figcaption>Storm Chasers</figcaption>
+        </figure>
+        <figure>
+           <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/sunny_400.jpg">
+           <figcaption>Sunny Day</figcaption>
+        </figure>
+        <figure>
+           <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/thunderstorm_400.jpg">
+           <figcaption>Thunderstorm</figcaption>
+        </figure>
+         <figure>
+            <img class="gallery-image" alt="" src="./images/loading.jpg" data-src="./images/tornado_400.jpg">
+            <figcaption>Tornado</figcaption>
+         </figure>
+         </div>
+   </main>
+   <footer>
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      <span id="today"></span>
+   </footer>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7futJ8PvCwb-_TD6pzqorZfqzJ2L6LIE&callback=initMap"></script>
+   <script src="./js/site.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script>
+      WebFont.load({
+        google: {
+          families: ['Bree Serif', 'M PLUS Rounded 1c']
+        }
+      });
+    </script>
+</body>
+</html>  
