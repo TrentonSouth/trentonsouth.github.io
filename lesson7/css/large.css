@@ -19,6 +19,6 @@
       display:none;
    }
    #gallery-images figure:hover {
-      box-shadow: 5px 10px #1469e2;
+      box-shadow: 0 0 50px #1469e2;
     }
 }
