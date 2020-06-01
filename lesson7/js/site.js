@@ -1,4 +1,3 @@
-//document.getElementById("updated").innerHTML = "Last Updated " + document.lastModified;
 const date = new Date();
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
@@ -12,9 +11,11 @@ const year = date.getFullYear();
 document.getElementById("today").innerHTML = dayName + ', ' + date.getDate() + ' ' + monthName  + ' ' + year;
 document.getElementById("year").innerHTML = year;
 
-if(dayName == 'Friday') {
-   document.getElementById("alert").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-   document.getElementById("alert").classList.add("show");
+function prestonAlert() {
+   if(dayName == 'Friday') {
+      document.getElementById("alert").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+      document.getElementById("alert").classList.add("show");
+   }
 }
 
 let imagesToLoad = document.querySelectorAll('img[data-src]');

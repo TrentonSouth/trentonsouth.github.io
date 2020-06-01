@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 6 - Preston Page">
+  <title>Unlimited Weather - Preston</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+   <div id="alert"></div>
+   <header>
+      <img alt="Logo" id="logo" src="./images/logo.png">
+      <div id="title">Unlimited Weather</div>
+      <div id="motto">Know before you go!</div>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="#">Home</a></li>
+            <li><a class="active" title="Preston" href="./preston-6.html">Preston</a></li>
+            <li><a title="Soda Springs" href="#">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="#">Fish Haven</a></li>
+            <li><a title="Storm Center" href="#">Storm Center</a></li>
+            <li><a title="Gallery" href="./gallery-7.html">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <h1 class="page_title">Preston</h1>
+      <section id="hero">
+         <picture>
+            <source media="(max-width: 400px)" srcset="./images/hero_400.jpg">
+            <source media="(max-width: 800px)" srcset="./images/hero_800.jpg">
+            <img src="./images/hero_1200.jpg" alt="Preston Landscape">
+        </picture>
+         <div id="weather-summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: Snowing</p>
+            <p>High: <span id="hightemp">24</span>&#8457;</p>
+            <p>Wind Chill: <span id="windchill"></span>&#8457;</p>
+            <p>Humidity: 94%</p>
+            <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+         </div>
+      </section>
+      <section id="forecast">
+         <h3>5 Day Forecast</h3>
+         <div id="forecast1" class="forecast"></div>
+         <div id="forecast2" class="forecast"></div>
+         <div id="forecast3" class="forecast"></div>
+         <div id="forecast4" class="forecast"></div>
+         <div id="forecast5" class="forecast"></div>
+      </section>
+      <article>
+         <div id="article-content">
+            <h3>Winter Storms</h3>
+            <p>The first of two big Thanksgiving week winter storms entered East Idaho on Wednesday morning and is continuing to bring snow to the region during one of the biggest travel times of the year.</p>
+
+            <p>After the current storm exits the area on Thursday morning, another storm will bring widespread snow to East Idaho on Friday, according to the National Weather Service. Authorities are urging the public to use extreme caution while driving for the Thanksgiving holiday because of the storms.</p>
+            
+            <p>Winter storm warnings calling for a foot or more of snow from the first storm have been declared for much of East Idaho, including the Arco, Spencer, Dubois, Island Park, Preston, Malad, Rockland, Malta, Holbrook, Thatcher and Montpelier areas.</p>
+         </div>
+         <img alt="Preston Winter" id="article-image" src="./images/preston-article.jpg">
+      </article>
+      <section id="map-info">
+         <div id="map"></div>
+         <div id="contact-info">
+            <h3>Contact Info</h3>
+            <p>123 Weather Lane</p>
+            <p>Boise, ID 83701</p>
+            <p>208.123.4567</p>
+            <p>contact@unlimitedweather.com</p>
+         </div>
+      </section>
+   </main>   
+   <footer>
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      <span id="today"></span>
+   </footer>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7futJ8PvCwb-_TD6pzqorZfqzJ2L6LIE&callback=initMap"></script>
+   <script src="./js/site.js"></script>
+   <script src="./js/windchill.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script>
+      WebFont.load({
+        google: {
+          families: ['Bree Serif', 'M PLUS Rounded 1c']
+        }
+      });
+      prestonAlert();
+    </script>
+</body>
+</html>
