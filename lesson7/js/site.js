@@ -112,4 +112,3 @@ function buildForecastDay(dayOfMonth, abbrMonth, image, desc, temp) {
    html += '<div>' + temp + '&#8457; </div>';
    return html;
 }
-
