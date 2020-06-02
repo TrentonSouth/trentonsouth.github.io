@@ -6,6 +6,12 @@ const loadImages = (image) => {
   };
 };
 
+let options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0 0 50px 0',
+  threshold: 0
+}
+
 if('IntersectionObserver' in window) {
    const observer = new IntersectionObserver((items, observer) => {
      items.forEach((item) => {
@@ -14,7 +20,7 @@ if('IntersectionObserver' in window) {
          observer.unobserve(item.target);
        }
      });
-   });
+   }, options);
    imagesToLoad.forEach((img) => {
      observer.observe(img);
    });
