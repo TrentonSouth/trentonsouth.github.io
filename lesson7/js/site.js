@@ -26,6 +26,11 @@ const loadImages = (image) => {
   };
 };
 
+let options = {
+   rootMargin: '0px 0px 50px 0px',
+   threshold: 0
+ }
+
 if('IntersectionObserver' in window) {
    const observer = new IntersectionObserver((items, observer) => {
      items.forEach((item) => {
@@ -34,7 +39,7 @@ if('IntersectionObserver' in window) {
          observer.unobserve(item.target);
        }
      });
-   });
+   }, options);
    imagesToLoad.forEach((img) => {
      observer.observe(img);
    });
