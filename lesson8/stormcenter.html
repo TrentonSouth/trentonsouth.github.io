@@ -69,7 +69,7 @@
                </label>
             </div>
             <div class="formfield">
-               <label>Severity: <input type="range" name="severity" id="severity" min="1" max="10" value="5"></label>
+               <label><span id="severitydisplay">Severity: 5</span><input type="range" name="severity" id="severity" min="1" max="10" onchange="updateSeverity(this.value);" value="5"></label>
             </div>
             <div class="formfield">
                <label class="dangerlevel">User Danger Level:</label>
