@@ -104,4 +104,10 @@
       text-align: center;
    }
 
+   /* Storm Center */
+
+   #stormcenter input {
+      height:30px;
+    } 
+
 }

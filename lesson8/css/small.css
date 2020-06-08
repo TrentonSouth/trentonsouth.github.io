@@ -207,6 +207,9 @@ nav ul {
 .active:hover {
   color: black;
 }
+.center {
+  text-align: center;
+}
 .fade_in {
   visibility: visible;
   opacity: 1;
@@ -232,4 +235,70 @@ nav ul {
   margin: 5px 10px 5px 10px;
   border: solid thin #C0C0C0;
   padding: 10px;
+}
+
+/* Storm center form */
+
+#stormcenter .formfield label {
+  display:flex;
+  flex-direction: column;
+}
+#stormcenter .formfield .dangerlevel {
+  flex-direction: row;
+}
+
+#stormcenter .formfield .dangerlevel .optionvalue {
+  position: relative;
+  top: 7px;
+  left: 4px;
+}
+
+#stormcenter input {
+  height:50px;
+} 
+
+#stormcenter input:required:invalid {
+  border-left: 6px solid red;
+}
+
+#stormcenter input:required:valid {
+  border-left: 6px solid green;
+}
+#stormcenter input[type=radio] {
+  display:block;
+}
+
+#stormcenter #comments {
+  height: 100px;
+}
+
+#stormcenter .formfield {
+  margin-top: 15px;
+}
+
+#stormcenter #submit {
+  margin-top:30px;
+  width:100%;
+  max-width: 30rem;
+  background-color: #555;
+  border-radius: 20px;
+  color: white;
+  font-size: 30px;
+  height: 40px;
+}
+
+#stormcenter {
+  padding: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*********************/
+
+.thanks {
+  font-size: 2em;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Week 8 - Storm Center">
-  <title>Unlimited Weather - Preston</title>
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/small.css">
-  <link rel="stylesheet" href="./css/medium.css">
-  <link rel="stylesheet" href="./css/large.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="Week 8 - Storm Center">
+   <title>Unlimited Weather - Preston</title>
+   <link rel="shortcut icon" href="/favicon.ico">
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/small.css">
+   <link rel="stylesheet" href="./css/medium.css">
+   <link rel="stylesheet" href="./css/large.css">
 </head>
+
 <body>
    <div id="alert"></div>
    <header>
@@ -18,7 +20,8 @@
       <div id="title">Unlimited Weather</div>
       <div id="motto">Know before you go!</div>
       <nav>
-         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
+         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span
+               id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
             <li><a title="Home" href="#">Home</a></li>
             <li><a title="Preston" href="./preston-6.html">Preston</a></li>
@@ -30,20 +33,66 @@
       </nav>
    </header>
    <main>
-
+      <form method="GET" action="thanks.html">
+         <div id="stormcenter">
+            <h2>Share your weather experience</h2>
+            <div class="formfield">
+               <label>Full Name: <input type="text" name="fullname" id="fullname" pattern="^[a-zA-Z\s]*$"
+                     required></label>
+            </div>
+            <div class="formfield">
+               <label>Email: <input type="email" name="email" id="fullname" placeholder="email@address.com"></label>
+            </div>
+            <div class="formfield">
+               <label>Phone Number: <input type="tel" name="phonenumber" id="phonenumber" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+            </div>
+            <div class="formfield">
+               <label>Zip Code: <input type="number" name="zipcode" id="zipcode" required></label>
+            </div>
+            <div class="formfield">
+               <label>Storm Date: <input type="date" name="stormdate" id="stormdate"></label>
+            </div>
+            <div class="formfield">
+               <label>Storm Type: <input list="stormtypes" name="stormtype" id="stormtype">
+                  <datalist id="stormtypes">
+                     <option value="Flash Flood">
+                     <option value="Hail">
+                     <option value="Hurricane">
+                     <option value="Thunderstorm">
+                     <option value="Tornado">
+                  </datalist>
+               </label>
+            </div>
+            <div class="formfield">
+               <label>Severity: <input type="range" name="severity" id="severity" min="1" max="10" value="5"></label>
+            </div>
+            <div class="formfield">
+               <label class="dangerlevel">User Danger Level:</label>
+               <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="Yes"><span class="optionvalue">Yes</span></label>
+               <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="Maybe"><span class="optionvalue">Maybe</span></label>
+               <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="No"><span class="optionvalue">No</span></label>
+            </div>
+            <div class="formfield">
+               <label>Comments: <textarea name="comments" id="comments"></textarea></label>
+            </div>
+            <input name="submit" id="submit" type="submit" value="Share your experience">
+         </div>
+      </form>
    </main>
    <footer>
-      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link"
+         href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
       <span id="today"></span>
    </footer>
- <script src="./js/site.js"></script>
+   <script src="./js/site.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
    <script>
       WebFont.load({
-        google: {
-          families: ['Bree Serif', 'M PLUS Rounded 1c']
-        }
+         google: {
+            families: ['Bree Serif', 'M PLUS Rounded 1c']
+         }
       });
-    </script>
+   </script>
 </body>
-</html>  
+
+</html>
