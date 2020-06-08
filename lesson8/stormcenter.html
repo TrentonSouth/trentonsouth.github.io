@@ -36,6 +36,8 @@
       <form method="GET" action="thanks.html">
          <div id="stormcenter">
             <h2>Share your weather experience</h2>
+            <fieldset>
+               <legend>Personal Information</legend>
             <div class="formfield">
                <label>Full Name: <input type="text" name="fullname" id="fullname" pattern="^[a-zA-Z\s]*$"
                      required></label>
@@ -49,6 +51,9 @@
             <div class="formfield">
                <label>Zip Code: <input type="number" name="zipcode" id="zipcode" required></label>
             </div>
+         </fieldset>
+         <fieldset>
+            <legend>Storm Information</legend>
             <div class="formfield">
                <label>Storm Date: <input type="date" name="stormdate" id="stormdate"></label>
             </div>
@@ -75,7 +80,10 @@
             <div class="formfield">
                <label>Comments: <textarea name="comments" id="comments"></textarea></label>
             </div>
+         </fieldset>
+         <div class="center">
             <input name="submit" id="submit" type="submit" value="Share your experience">
+         </div>
          </div>
       </form>
    </main>

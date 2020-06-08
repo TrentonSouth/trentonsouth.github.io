@@ -287,11 +287,27 @@ nav ul {
   height: 40px;
 }
 
+#stormcenter label {
+  font-weight: bold;
+}
+
 #stormcenter {
   padding: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#stormcenter fieldset{
+  margin: 0 2em 2em 2em;
+  border: 3px solid #555;
+  padding: 0 1em 1em 1em;
+}
+
+#stormcenter legend {
+  color: #555;
+  margin: 0 1em;
+  font-size: 1.4em;
 }
 
 /*********************/
