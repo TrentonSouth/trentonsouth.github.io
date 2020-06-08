@@ -39,14 +39,14 @@
             <fieldset>
                <legend>Personal Information</legend>
             <div class="formfield">
-               <label>Full Name: <input type="text" name="fullname" id="fullname" pattern="^[a-zA-Z\s]*$"
+               <label>Full Name: <input type="text" name="fullname" id="fullname" title="Must be at least 5 characters" pattern="^[a-zA-Z\s]{5,}$"
                      required></label>
             </div>
             <div class="formfield">
                <label>Email: <input type="email" name="email" id="email" placeholder="email@address.com"></label>
             </div>
             <div class="formfield">
-               <label>Phone Number: <input type="tel" name="phonenumber" id="phonenumber" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+               <label>Phone Number: <input type="tel" name="phonenumber" id="phonenumber" placeholder="999-999-9999" title="Please format as 999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
             </div>
             <div class="formfield">
                <label>Zip Code: <input type="number" name="zipcode" id="zipcode" required></label>
