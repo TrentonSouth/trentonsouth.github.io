@@ -1,0 +1,24 @@
+@media only screen and (min-width: 900px) { 
+   h1  {
+      font-size: 2.25em;
+   }
+   h2, #motto {
+      font-size: 1.5em;
+   }
+   #gallery-images {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+   #sitemap {
+      display: block;
+      width: 100%;
+   }
+   #title {
+      font-size: 2.25em;
+   }
+   #vsitemap {
+      display:none;
+   }
+   #gallery-images figure:hover {
+      box-shadow: 0 0 50px #1469e2;
+    }
+}
