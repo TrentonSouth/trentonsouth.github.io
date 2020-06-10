@@ -72,6 +72,16 @@
                <label><span id="severitydisplay">Severity: 5</span><input type="range" name="severity" id="severity" min="1" max="10" onchange="updateSeverity(this.value);" value="5"></label>
             </div>
             <div class="formfield">
+               <label class="storm">Storm Region:
+                  <select name="region">
+                     <option value="" selected disabled>Select Region...</option>
+                     <option value="preston">Preston</option>
+                     <option value="soda springs">Soda Springs</option>
+                     <option value="fish haven">Fish Haven</option>
+                  </select>
+               </label>
+             </div>
+            <div class="formfield">
                <label class="dangerlevel">User Danger Level:</label>
                <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="Yes"><span class="optionvalue">Yes</span></label>
                <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="Maybe"><span class="optionvalue">Maybe</span></label>
