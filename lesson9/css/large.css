@@ -39,9 +39,21 @@
    .city_detail {
       width: 100%;
       background-color: gray;
+      min-height: 200px;
    }
-   #sp_text {
+   .city_detail h4 {
+      font-style: italic;
+   }
+   .city_detail h4, .city_detail p  {
+      padding: 0 10px;
+   }
+   #p_text {
       grid-column: 1;
+      grid-row: 1;
+   }
+   #p_image {
+      grid-column: 1;
+      grid-row: 2;
    }
 
 }

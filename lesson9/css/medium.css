@@ -114,17 +114,16 @@
    *********************/
 
    #cities section {
-      display: grid;
       grid-template-columns: 1fr 1fr;
    }
 
-   .city_detail {
-      width: 50%;
-   }
-   #sp_text {
+
+   #p_text {
       grid-column: 2;
+      grid-row:2;
    }
-   #sp_image {
+   #p_image {
       grid-column: 1;
+      grid-row:2;
    }
 }
