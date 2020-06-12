@@ -109,5 +109,22 @@
    #stormcenter input {
       height:30px;
     } 
+   /*********************
+   Home Page
+   *********************/
 
+   #cities section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .city_detail {
+      width: 50%;
+   }
+   #sp_text {
+      grid-column: 2;
+   }
+   #sp_image {
+      grid-column: 1;
+   }
 }

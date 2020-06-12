@@ -131,3 +131,52 @@ function getParameterByName(name, url) {
 function updateSeverity(val) {
    document.getElementById('severitydisplay').innerHTML = "Severity: " + val; 
 }
+
+function loadTowns() {
+   /*Getting data for towns*/
+const requestURL = 'https://raw.githubusercontent.com/trentonsouth/trentonsouth.github.io/master/lesson9/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject['towns'];
+
+    for (let i = 0; i < towns.length; i++ ) {
+        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+            let town = towns[i].name;
+            let prefix = town == "Preston" ? "p" : town == "Soda Springs" ? "ss" : town == "Fish Haven" ? "fh" : "";
+            let section = document.createElement('section');
+            let divDetail = document.createElement('div')
+            divDetail.setAttribute('class', 'city_home city_detail')
+            divDetail.setAttribute('id', prefix + '_text');
+            let image = document.createElement('img');
+            image.setAttribute('src', './images/' + towns[i].photo);
+            image.setAttribute('class', 'city_home city_image');
+            image.setAttribute('alt', towns[i].name)
+            image.setAttribute('id', prefix + '_image');
+            let name = document.createElement('h2');
+            name.textContent = towns[i].name;
+            let motto = document.createElement('h4');
+            motto.textContent = towns[i].motto;
+            let yearFounded = document.createElement('p');
+            yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            let currentPopulation = document.createElement('p');
+            currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
+            let averageRainfall = document.createElement('p');
+            averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+
+
+            //Add elements into section
+            section.appendChild(image);
+            section.appendChild(name);
+            section.appendChild(motto);
+            section.appendChild(yearFounded);
+            section.appendChild(currentPopulation);
+            section.appendChild(averageRainfall);
+            document.querySelector('main').appendChild(section);
+        }
+    }
+  });
+}

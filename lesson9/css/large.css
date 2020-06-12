@@ -24,4 +24,24 @@
 
     /* Storm Center */
 
+   /*********************
+   Home Page
+   *********************/
+
+   #cities {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+   #cities section {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+   }
+   .city_detail {
+      width: 100%;
+      background-color: gray;
+   }
+   #sp_text {
+      grid-column: 1;
+   }
+
 }

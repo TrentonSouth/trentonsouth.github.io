@@ -319,3 +319,26 @@ nav ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*********************
+Home Page
+*********************/
+
+#cities {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+#cities h2 {
+  text-align: center;
+}
+#cities section {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+#cities img {
+  width: 100%;
+}
+.city_detail {
+  width: 100%;
+}
