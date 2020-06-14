@@ -42,6 +42,15 @@ section {
 
 @media only screen and (min-width: 750px) { 
    .cards {
+      grid-template-columns: 1fr 1fr;
+   }
+   img {
+      width: 80%;
+   }
+}
+
+@media only screen and (min-width: 900px) { 
+   .cards {
       grid-template-columns: 1fr 1fr 1fr 1fr;
    }
    img {
