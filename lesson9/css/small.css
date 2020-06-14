@@ -331,14 +331,28 @@ Home Page
 
 #cities h2 {
   text-align: center;
+  font-size: 2.5em;
+  padding-bottom: 0;
+  margin-bottom: -10px;
+}
+#cities h4 {
+  text-align: center;
+  font-size: 1.5 em;
+}
+#cities h5 {
+  text-align: center;
+  font-size: 1.2 em;
+  font-style: italic;
 }
 #cities section {
   display:grid;
   grid-template-columns: 1fr;
+  padding-bottom: 15px;
 }
 #cities img {
   width: 100%;
 }
+
 .city_detail {
   width: 100%;
 }

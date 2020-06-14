@@ -157,13 +157,13 @@ function loadTowns() {
                image.setAttribute('id', prefix + '_image');
                let name = document.createElement('h2');
                name.textContent = towns[i].name;
-               let motto = document.createElement('h4');
+               let motto = document.createElement('h5');
                motto.textContent = towns[i].motto;
-               let yearFounded = document.createElement('p');
+               let yearFounded = document.createElement('h4');
                yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-               let currentPopulation = document.createElement('p');
+               let currentPopulation = document.createElement('h4');
                currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
-               let averageRainfall = document.createElement('p');
+               let averageRainfall = document.createElement('h4');
                averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
 
                //Add elements into section
