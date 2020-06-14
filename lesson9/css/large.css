@@ -38,7 +38,6 @@
    }
    .city_detail {
       width: 100%;
-      background-color: rgb(200, 200, 200);
       min-height: 200px;
       border-radius: 10px 10px 0 0;
    }

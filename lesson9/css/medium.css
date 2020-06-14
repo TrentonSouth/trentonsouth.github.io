@@ -117,7 +117,6 @@
       grid-template-columns: 1fr 1fr;
    }
 
-
    #p_text {
       grid-column: 2;
       grid-row:2;
