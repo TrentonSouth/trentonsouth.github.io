@@ -185,7 +185,6 @@ function buildTownCard(town, prefix) {
    averageRainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
 
    //Add elements into section
-   
    divDetail.appendChild(name);
    divDetail.appendChild(motto);
    divDetail.appendChild(yearFounded);
