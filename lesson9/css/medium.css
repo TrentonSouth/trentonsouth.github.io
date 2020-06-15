@@ -117,11 +117,11 @@
       grid-template-columns: 1fr 1fr;
    }
 
-   #p_text {
+   #sp_text {
       grid-column: 2;
       grid-row:2;
    }
-   #p_image {
+   #sp_image {
       grid-column: 1;
       grid-row:2;
    }

@@ -47,11 +47,11 @@
    .city_detail h4, .city_detail p  {
       padding: 0 10px;
    }
-   #p_text {
+   #sp_text {
       grid-column: 1;
       grid-row: 1;
    }
-   #p_image {
+   #sp_image {
       grid-column: 1;
       grid-row: 2;
    }

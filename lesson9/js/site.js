@@ -141,42 +141,57 @@ function loadTowns() {
    })
    .then(function (jsonObject) {
       const towns = jsonObject['towns'];
-
+      let preston;
+      let sodasprings;
+      let fishhaven;
       for (let i = 0; i < towns.length; i++ ) {
-         if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
-               let town = towns[i].name;
-               let prefix = town == "Preston" ? "p" : town == "Soda Springs" ? "ss" : town == "Fish Haven" ? "fh" : "";
-               let section = document.createElement('section');
-               let divDetail = document.createElement('div')
-               divDetail.setAttribute('class', 'city_home city_detail')
-               divDetail.setAttribute('id', prefix + '_text');
-               let image = document.createElement('img');
-               image.setAttribute('src', './images/' + towns[i].photo);
-               image.setAttribute('class', 'city_home city_image');
-               image.setAttribute('alt', towns[i].name)
-               image.setAttribute('id', prefix + '_image');
-               let name = document.createElement('h2');
-               name.textContent = towns[i].name;
-               let motto = document.createElement('h5');
-               motto.textContent = towns[i].motto;
-               let yearFounded = document.createElement('h4');
-               yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-               let currentPopulation = document.createElement('h4');
-               currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
-               let averageRainfall = document.createElement('h4');
-               averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-
-               //Add elements into section
-               
-               divDetail.appendChild(name);
-               divDetail.appendChild(motto);
-               divDetail.appendChild(yearFounded);
-               divDetail.appendChild(currentPopulation);
-               divDetail.appendChild(averageRainfall);
-               section.appendChild(divDetail);
-               section.appendChild(image);
-               document.querySelector('main').appendChild(section);
+         switch (towns[i].name) {
+            case "Preston":
+               preston = buildTownCard(towns[i], 'p');
+            break;
+            case "Soda Springs":
+               sodasprings = buildTownCard(towns[i], 'sp');
+            break;
+            case "Fish Haven":
+               fishhaven = buildTownCard(towns[i], 'fh');
+            break;
          }
       }
+      document.querySelector('main').appendChild(preston);
+      document.querySelector('main').appendChild(sodasprings);
+      document.querySelector('main').appendChild(fishhaven);
    });
+}
+
+function buildTownCard(town, prefix) {
+   let section = document.createElement('section');
+   let divDetail = document.createElement('div')
+   divDetail.setAttribute('class', 'city_home city_detail')
+   divDetail.setAttribute('id', prefix + '_text');
+   let image = document.createElement('img');
+   image.setAttribute('src', './images/' + town.photo);
+   image.setAttribute('class', 'city_home city_image');
+   image.setAttribute('alt', town.name)
+   image.setAttribute('id', prefix + '_image');
+   let name = document.createElement('h2');
+   name.textContent = town.name;
+   let motto = document.createElement('h5');
+   motto.textContent = town.motto;
+   let yearFounded = document.createElement('h4');
+   yearFounded.textContent = 'Year Founded: ' + town.yearFounded;
+   let currentPopulation = document.createElement('h4');
+   currentPopulation.textContent = 'Population: ' + town.currentPopulation;
+   let averageRainfall = document.createElement('h4');
+   averageRainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
+
+   //Add elements into section
+   
+   divDetail.appendChild(name);
+   divDetail.appendChild(motto);
+   divDetail.appendChild(yearFounded);
+   divDetail.appendChild(currentPopulation);
+   divDetail.appendChild(averageRainfall);
+   section.appendChild(divDetail);
+   section.appendChild(image);
+   return section;
 }
