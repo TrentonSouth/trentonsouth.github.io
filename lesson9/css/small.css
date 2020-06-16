@@ -186,6 +186,11 @@ nav ul {
 #updated {
   color: #fff800;
 }
+#wireframes {
+  font-size: 1.3em;
+  margin-top: 20px;
+  display: block;
+}
 #weather-summary {
   position: absolute;
   line-height: 10px;
