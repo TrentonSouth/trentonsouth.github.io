@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 6 - Preston Page">
+  <title>Unlimited Weather - Preston</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+   <div id="alert"></div>
+   <header>
+      <img alt="Logo" id="logo" src="./images/logo.png">
+      <div id="title">Unlimited Weather</div>
+      <div id="motto">Know before you go!</div>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="./index.html">Home</a></li>
+            <li><a class="active" title="Preston" href="./preston-6.html">Preston</a></li>
+            <li><a title="Soda Springs" href="#">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="#">Fish Haven</a></li>
+            <li><a title="Storm Center" href="./stormcenter.html">Storm Center</a></li>
+            <li><a title="Gallery" href="./gallery-7.html">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <h1 class="page_title">Preston</h1>
+      <section id="hero">
+         <picture>
+            <source media="(max-width: 400px)" srcset="./images/hero_400.jpg">
+            <source media="(max-width: 800px)" srcset="./images/hero_800.jpg">
+            <img src="./images/hero_1200.jpg" alt="Preston Landscape">
+        </picture>
+         <div id="weather-summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="current"></span></p>
+            <p>High: <span id="hightemp"></span>&#8457;</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windspeed"></span> mph</p>
+         </div>
+      </section>
+      <h3>5 Day Forecast</h3>
+      <section id="forecast">
+            <div class="forecast" id="forecast1">
+                <h3 id="day1"></h3>
+                <div><img id='icon1'></div>
+                <div id="temp1"></div>
+                <div id="condition1"></div>
+                <div id="weather1"></div>
+            </div>
+            <div class="forecast" id="forecast2">
+                <h3 id="day2"></h3>
+                <div><img id='icon2'></div>
+                <div id="temp2"></div>
+                <div id="condition2"></div>
+                <div id="weather2"></div>
+            </div>
+            <div class="forecast" id="forecast3">
+                <h3 id="day3"></h3>
+                <div><img id='icon3'></div>
+                <div id="temp3"></div>
+                <div id="condition3"></div>
+                <div id="weather3"></div>
+            </div>
+            <div class="forecast" id="forecast4">
+                <h3 id="day4"></h3>
+                <div><img id='icon4'></div>
+                <div id="temp4"></div>
+                <div id="condition4"></div>
+                <div id="weather4"></div>
+            </div>
+            <div class="forecast" id="forecast5">
+                <h3 id="day5"></h3>
+                <div><img id='icon5'></div>
+                <div id="temp5"></div>
+                <div id="condition5"></div>
+                <div id="weather5"></div>
+            </div>
+      </section>
+      <article>
+         <div id="article-content">
+            <h3>Winter Storms</h3>
+            <p>The first of two big Thanksgiving week winter storms entered East Idaho on Wednesday morning and is continuing to bring snow to the region during one of the biggest travel times of the year.</p>
+
+            <p>After the current storm exits the area on Thursday morning, another storm will bring widespread snow to East Idaho on Friday, according to the National Weather Service. Authorities are urging the public to use extreme caution while driving for the Thanksgiving holiday because of the storms.</p>
+            
+            <p>Winter storm warnings calling for a foot or more of snow from the first storm have been declared for much of East Idaho, including the Arco, Spencer, Dubois, Island Park, Preston, Malad, Rockland, Malta, Holbrook, Thatcher and Montpelier areas.</p>
+         </div>
+         <img alt="Preston Winter" id="article-image" src="./images/preston-article.jpg">
+      </article>
+      <section id="map-info">
+         <div id="map"></div>
+         <div id="contact-info">
+            <h3>Contact Info</h3>
+            <p>123 Weather Lane</p>
+            <p>Boise, ID 83701</p>
+            <p>208.123.4567</p>
+            <p>contact@unlimitedweather.com</p>
+         </div>
+      </section>
+   </main>   
+   <footer>
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      <span id="today"></span>
+   </footer>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7futJ8PvCwb-_TD6pzqorZfqzJ2L6LIE&callback=initMap"></script>
+   <script src="./js/site.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script>
+      WebFont.load({
+        google: {
+          families: ['Bree Serif', 'M PLUS Rounded 1c']
+        }
+      });
+      currentWeather('83263');
+      buildForecast('83263');
+      prestonAlert();
+    </script>
+</body>
+</html>
