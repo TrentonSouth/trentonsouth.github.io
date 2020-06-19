@@ -197,8 +197,8 @@ function buildTownCard(town, prefix) {
 }
 
 /* Current Weather */
-function currentWeather(zip) {
-   const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
+function currentWeather(id) {
+   const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + id + "&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
 fetch(apiURL)
  .then((response) => response.json())
  .then((town) => {
@@ -224,8 +224,8 @@ fetch(apiURL)
 }
 
 /* 5 day forecast */
-function buildForecast(zip) {
-   url ="https://api.openweathermap.org/data/2.5/forecast?zip=" + zip + "&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
+function buildForecast(id) {
+   url ="https://api.openweathermap.org/data/2.5/forecast?id=" + id + "&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
    fetch(url)
    .then((response) => response.json())
    .then((town) => {
