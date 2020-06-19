@@ -198,7 +198,7 @@ function buildTownCard(town, prefix) {
 
 /* Current Weather */
 function currentWeather(id) {
-   const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + id + "&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
+   const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + id + "&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
 fetch(apiURL)
  .then((response) => response.json())
  .then((town) => {
