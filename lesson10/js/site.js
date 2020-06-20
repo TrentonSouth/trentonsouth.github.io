@@ -202,7 +202,6 @@ function currentWeather(id) {
 fetch(apiURL)
  .then((response) => response.json())
  .then((town) => {
-    console.log(town);
    let description = town.weather[0].description;
    document.getElementById('hightemp').innerHTML = Math.round(town.main.temp_max);
    document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
@@ -229,9 +228,7 @@ function buildForecast(id) {
    fetch(url)
    .then((response) => response.json())
    .then((town) => {
-      console.log(town);
       const townList = town.list;
-      console.log(townList.length);
       let daycount = 0;
       for (let i = 0; i < town.list.length; i++ ) {
          let day = townList[i].dt_txt;
