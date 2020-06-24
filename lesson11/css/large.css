@@ -1,0 +1,59 @@
+@media only screen and (min-width: 900px) { 
+   h1  {
+      font-size: 2.25em;
+   }
+   h2, #motto {
+      font-size: 1.5em;
+   }
+   #gallery-images {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+   #sitemap {
+      display: block;
+      width: 100%;
+   }
+   #title {
+      font-size: 2.25em;
+   }
+   #vsitemap {
+      display:none;
+   }
+   #gallery-images figure:hover {
+      box-shadow: 0 0 50px #1469e2;
+    }
+
+    /* Storm Center */
+
+   /*********************
+   Home Page
+   *********************/
+
+   #cities {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+   #cities section {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+   }
+   .city_detail {
+      width: 100%;
+      min-height: 200px;
+      border-radius: 10px 10px 0 0;
+   }
+   .city_detail h4 {
+      font-style: italic;
+   }
+   .city_detail h4, .city_detail p  {
+      padding: 0 10px;
+   }
+   #sp_text {
+      grid-column: 1;
+      grid-row: 1;
+   }
+   #sp_image {
+      grid-column: 1;
+      grid-row: 2;
+   }
+
+}

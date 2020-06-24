@@ -1,0 +1,57 @@
+h1, h2 {
+   font-family: 'Suez One', serif;
+   text-align: center;
+   color: rgb(77,77,150);
+}
+
+
+img {
+   width: 50%;
+   margin: 5px auto 0 auto;
+   display: block;
+   box-shadow: 0px 0px 10px 5px #979797;
+}
+
+main {
+   max-width: 1200px;
+   box-shadow: 0px 0px 10px 5px #979797;
+   padding: 15px;
+   margin: 0 auto;
+   background-color: #dbdbdb;
+}
+
+section {
+   background-color: #B9B9CC;
+   border: solid 2px rgb(77,77,150);
+   padding-bottom: 15px;
+}
+
+.birth, .birthplace {
+   text-align: center;
+   padding-bottom: 3px;
+}
+
+.cards {
+   display: grid;
+   grid-template-columns: 1fr; 
+   gap: 5px;
+   
+}
+
+@media only screen and (min-width: 750px) { 
+   .cards {
+      grid-template-columns: 1fr 1fr;
+   }
+   img {
+      width: 80%;
+   }
+}
+
+@media only screen and (min-width: 900px) { 
+   .cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+   img {
+      width: 80%;
+   }
+}

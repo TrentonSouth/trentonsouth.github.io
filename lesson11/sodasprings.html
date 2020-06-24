@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Week 6 - Preston Page">
-  <title>Unlimited Weather - Preston</title>
+  <meta name="description" content="Week 11 - Soda Springs Page">
+  <title>Unlimited Weather - Soda Springs</title>
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/small.css">
@@ -21,9 +21,9 @@
          <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
             <li><a title="Home" href="./index.html">Home</a></li>
-            <li><a class="active" title="Preston" href="./preston-6.html">Preston</a></li>
-            <li><a title="Soda Springs" href="#">Soda Springs</a></li>
-            <li><a title="Fish Haven" href="#">Fish Haven</a></li>
+            <li><a title="Preston" href="./preston.html">Preston</a></li>
+            <li><a class="active" title="Soda Springs" href="sodasprings.html">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="fishhaven.html">Fish Haven</a></li>
             <li><a title="Storm Center" href="./stormcenter.html">Storm Center</a></li>
             <li><a title="Gallery" href="./gallery-7.html">Gallery</a></li>
          </ul>
@@ -33,9 +33,9 @@
       <h1 class="page_title">Preston</h1>
       <section id="hero">
          <picture>
-            <source media="(max-width: 400px)" srcset="./images/preston_hero_400.jpg">
-            <source media="(max-width: 800px)" srcset="./images/preston_hero_800.jpg">
-            <img src="./images/preston_hero_1200.jpg" alt="Preston Landscape">
+            <source media="(max-width: 400px)" srcset="./images/sodasprings_hero_400.jpg">
+            <source media="(max-width: 800px)" srcset="./images/sodasprings_hero_800.jpg">
+            <img src="./images/sodasprings_hero_1200.jpg" alt="Soda Springs Guyser">
         </picture>
          <div id="weather-summary">
             <h3>Weather Summary</h3>
@@ -86,14 +86,14 @@
       </section>
       <article>
          <div id="article-content">
-            <h3>Winter Storms</h3>
+            <h3>Downtown Soda Springs</h3>
             <p>The first of two big Thanksgiving week winter storms entered East Idaho on Wednesday morning and is continuing to bring snow to the region during one of the biggest travel times of the year.</p>
 
             <p>After the current storm exits the area on Thursday morning, another storm will bring widespread snow to East Idaho on Friday, according to the National Weather Service. Authorities are urging the public to use extreme caution while driving for the Thanksgiving holiday because of the storms.</p>
             
             <p>Winter storm warnings calling for a foot or more of snow from the first storm have been declared for much of East Idaho, including the Arco, Spencer, Dubois, Island Park, Preston, Malad, Rockland, Malta, Holbrook, Thatcher and Montpelier areas.</p>
          </div>
-         <img alt="Preston Winter" id="article-image" src="./images/preston-article.jpg">
+         <img alt="Downtown Soda Springs" id="article-image" src="./images/sodasprings-article.jpg">
       </article>
       <section id="map-info">
          <div id="map"></div>
@@ -119,8 +119,8 @@
           families: ['Bree Serif', 'M PLUS Rounded 1c']
         }
       });
-      currentWeather('5604473');
-      buildForecast('5604473');
+      currentWeather('5607916');
+      buildForecast('5607916');
       prestonAlert();
     </script>
 </body>
