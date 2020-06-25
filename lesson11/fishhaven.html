@@ -84,15 +84,13 @@
                 <div id="weather5"></div>
             </div>
       </section>
+      <section id="events"><h2>Upcoming Events</h2></section>
       <article>
          <div id="article-content">
-            <h3>Cabin Home</h3>
-            <p>The first of two big Thanksgiving week winter storms entered East Idaho on Wednesday morning and is continuing to bring snow to the region during one of the biggest travel times of the year.</p>
-
-            <p>After the current storm exits the area on Thursday morning, another storm will bring widespread snow to East Idaho on Friday, according to the National Weather Service. Authorities are urging the public to use extreme caution while driving for the Thanksgiving holiday because of the storms.</p>
-            
-            <p>Winter storm warnings calling for a foot or more of snow from the first storm have been declared for much of East Idaho, including the Arco, Spencer, Dubois, Island Park, Preston, Malad, Rockland, Malta, Holbrook, Thatcher and Montpelier areas.</p>
-         </div>
+            <h3>Paradise</h3>
+            <p>FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake.</p>
+            <p>In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.</p>
+            <p>But they don't live there. It's different living in Fish Haven. The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side and the mountains.</p>          </div>
          <img alt="Fish Haven Cabin" id="article-image" src="./images/fishhaven-article.jpg">
       </article>
       <section id="map-info">
@@ -121,6 +119,7 @@
       });
       currentWeather('5585010');
       buildForecast('5585010');
+      getTownEvents("Fish Haven");
     </script>
 </body>
 </html>

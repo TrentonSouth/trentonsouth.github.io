@@ -118,6 +118,12 @@ nav ul {
 #contact-info p {
   line-height: 10px;
 }
+#events {
+  border: solid thin black;
+  font-size: 1.1em;
+  margin: 20px 0;
+  padding:10px 20px 20px 20px;
+}
 #forecast {
   display: none;
 }
