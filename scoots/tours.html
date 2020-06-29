@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Home">
+  <title>Scoot - Home</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+   <div id="content">
+   <header>
+      <picture>
+         <source media="(max-width: 400px)" srcset="./images/logo_small.jpg">
+         <source media="(max-width: 800px)" srcset="./images/logo_medium.jpg">
+         <img src="./images/logo_large.jpg" alt="Scoots Logo">
+     </picture>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="./">Home</a></li>
+            <li><a title="Rentals" href="./rentals.html">Rentals</a></li>
+            <li><a class="active" title="Tours" href="./tours.html">Tours</a></li>
+            <li><a title="Reservations" href="./reservations.html">Reservations</a></li>
+            <li><a title="Contact Us" href="./contact.html">Contact Us</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      
+      
+   </main>
+   <footer>
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      <span id="today"></span>
+   </footer>
+</div>
+ <script src="./js/site.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script>
+      WebFont.load({
+        google: {
+          families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
+        }
+      });
+    </script>
+</body>
+</html>  
