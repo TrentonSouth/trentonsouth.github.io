@@ -177,6 +177,25 @@ nav ul {
   color: rgb(70, 70, 70);
 }
 
+#site_story {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#site_story_article {
+  font-size: 1.5em;
+  text-align: justify;
+  margin-top: -10px;
+}
+#site_story_image {
+  width: 100%;
+  max-width: 400px;
+  grid-column: 1;
+  margin: 20px 0 0 15px;
+}
+
 #title {
   margin-top: 15px;
   grid-column: 2;
@@ -348,7 +367,7 @@ Home Page
 }
 #cities h4 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 #cities h5 {
   text-align: center;

@@ -46,6 +46,10 @@
    #forecast h3 {
       grid-column: 1 /6;
    }
+   #site_story {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
    .forecast {
       border: solid thin black;
    }
