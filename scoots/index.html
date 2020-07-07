@@ -14,11 +14,13 @@
 <body>
    <div id="content">
    <header>
+      <div id="logo">
       <picture>
          <source media="(max-width: 400px)" srcset="./images/logo_small.jpg">
          <source media="(max-width: 800px)" srcset="./images/logo_medium.jpg">
          <img src="./images/logo_large.jpg" alt="Scoots Logo">
      </picture>
+   </div>
       <nav>
          <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
@@ -30,9 +32,24 @@
          </ul>
       </nav>
    </header>
-   <main>
-      
-      
+   <main id="home_main">
+      <!-- Home Welcome -->
+      <div id="home_welcome">
+         <div class="center bold">Welcome to Scoots!</div>
+         <div>We are your one stop shop for touring Cozumel. Lorem ipsum dolor sit omet, consectetur odibiscing elit. Fusce at loreet nibh. 
+            Proin sodales malesuado er Lorem ipsum dolor sit omet, consectetur odibiscing elit. Fusce at loreet nibh. 
+         </div>
+      </div>
+      <div id="div_image_rotate">
+         <picture>
+            <source id="image_source" media="(max-width: 400px)" srcset="./images/rotate/scooters_small.jpg">
+            <img id="image_rotate" src="./images/rotate/scooters_large.jpg" alt="Scooters">
+        </picture>
+      </div>
+      <div id="div_call_to_action">
+         <button type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up quickly! Reserve yours now!</button>
+      </div>
+
    </main>
    <footer>
       &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>

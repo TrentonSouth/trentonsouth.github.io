@@ -45,3 +45,53 @@ function buildChart() {
       document.getElementById('chart').innerHTML = table;
    }
 }
+
+buildRentals();
+function buildRentals() {
+   if (data === undefined) {
+      setTimeout(buildRentals, 200);
+   } else {
+      let main = document.getElementById('home_main');
+      data.types.forEach(type => {
+         type.rentals.forEach(rental => {
+            console.log(rental);
+            let parent = document.createElement("div");
+            let img_div = document.createElement("div");
+            img_div.setAttribute('class', 'rental_image_div');
+            let img = document.createElement("img");
+            img.setAttribute('src', rental.image);
+            img.setAttribute('alt', rental.rental_type);
+            img_div.appendChild(img)
+            let txt_div = document.createElement("div");
+            txt_div.textContent = rental.description;
+            parent.appendChild(img_div);
+            parent.appendChild(txt_div);
+            main.appendChild(parent);
+         })
+      });
+   }
+}
+
+function toggle_nav() {
+   document.getElementById("main_nav").classList.toggle("nav_hidden");
+   document.getElementById("ham").classList.toggle("fade_out");
+   document.getElementById("ham").classList.toggle("fade_in");
+   document.getElementById("close").classList.toggle("fade_out");
+   document.getElementById("close").classList.toggle("fade_in");
+}
+
+let images = ['jeep','road','beach','scooters'];
+rotateImage(0);
+function rotateImage(pos) {
+   setTimeout(function() {
+      document.getElementById('image_source').setAttribute('srcset','./images/rotate/' + images[pos] + '_small.jpg');
+      document.getElementById('image_rotate').setAttribute('src','./images/rotate/' + images[pos] + '_large.jpg');
+      document.getElementById('image_rotate').setAttribute('alt', images[pos]);
+      if (pos == images.length-1) {
+         pos = 0;
+      } else {
+         pos += 1;
+      }
+      rotateImage(pos);
+   },5000);
+}

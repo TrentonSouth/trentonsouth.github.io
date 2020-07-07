@@ -15,7 +15,9 @@
                      "half_day":25,
                      "full_day":35
                   }
-               }
+               },
+               "description": "The Metropolitan features a liquid-cooled 49cc four-stroke engine with fuel injection. It's quiet, economical, and super reliable.",
+               "image": "images/metro.jpg"
             },
             {
                "rental_type":"Honda Dio Scooter",
@@ -29,7 +31,9 @@
                      "half_day":35,
                      "full_day":45
                   }
-               }
+               },
+               "description": "Honda Dio scooter comes with cool graphics, LED headlamps, mobile charging socket & more exciting features along with dream mileage.",
+               "image":"images/dio.jpg"
             },
             {
                "rental_type":"Honda PCX150 Scooter",
@@ -43,7 +47,9 @@
                      "half_day":45,
                      "full_day":55
                   }
-               }
+               },
+               "description":"There's heavy traffic, tight parking and plenty of stoplight-to-stoplight action. Fortunately, the Honda PCX150 is purpose-built to tackle these challenges and deliver loads of fun along the way.",
+               "image": "pcx150.jpg"
             }
          ]
       },
@@ -62,7 +68,9 @@
                      "half_day":60,
                      "full_day":80
                   }
-               }
+               },
+               "description": "Considered an off-road vehicle in which two people sit beside each other. The seating configuration is the same as in a car or truck. You have a steering wheel, pedals, and a gear shift just like a vehicle",
+               "image": "images/pioneer.jpg"
             }
          ]
       },
@@ -81,7 +89,9 @@
                      "half_day":85,
                      "full_day":125
                   }
-               }
+               },
+               "description": "The Wrangler Unlimited is a four-door version of Jeep's iconic Wrangler SUV.",
+               "image": "images/jeep4door.jpg"
             },
             {
                "rental_type":"Jeep Wrangler - 2 door",
@@ -95,7 +105,9 @@
                      "half_day":70,
                      "full_day":90
                   }
-               }
+               },
+               "description": "Close your eyes-now imagine trekking through the world's roughest terrain",
+               "image": "images/jeep2door.jpg"               
             }
          ]
       }
