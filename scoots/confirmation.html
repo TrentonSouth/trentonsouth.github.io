@@ -14,11 +14,13 @@
 <body>
    <div id="content">
    <header>
-      <picture>
-         <source media="(max-width: 400px)" srcset="./images/logo_small.jpg">
-         <source media="(max-width: 800px)" srcset="./images/logo_medium.jpg">
-         <img src="./images/logo_large.jpg" alt="Scoots Logo">
-     </picture>
+      <div id="logo">
+         <picture>
+            <source media="(max-width: 500px)" srcset="./images/logo_small.jpg">
+            <source media="(max-width: 1000px)" srcset="./images/logo_medium.jpg">
+            <img src="./images/logo_large.jpg" alt="Scoots Logo">
+         </picture>
+      </div>
       <nav>
          <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
@@ -35,8 +37,7 @@
       
    </main>
    <footer>
-      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
-      <span id="today"></span>
+
    </footer>
 </div>
  <script src="./js/site.js"></script>
