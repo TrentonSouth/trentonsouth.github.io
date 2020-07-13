@@ -14,13 +14,11 @@
 <body>
    <div id="content">
    <header>
-      <div id="logo">
-         <picture>
-            <source media="(max-width: 500px)" srcset="./images/logo_small.jpg">
-            <source media="(max-width: 1000px)" srcset="./images/logo_medium.jpg">
-            <img src="./images/logo_large.jpg" alt="Scoots Logo">
-         </picture>
-      </div>
+      <picture>
+         <source media="(max-width: 400px)" srcset="./images/logo_small.jpg">
+         <source media="(max-width: 800px)" srcset="./images/logo_medium.jpg">
+         <img src="./images/logo_large.jpg" alt="Scoots Logo">
+     </picture>
       <nav>
          <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
          <ul id="main_nav" class="nav_hidden">
@@ -32,32 +30,13 @@
          </ul>
       </nav>
    </header>
-   <main id="main_rentals">
-      <div id="chart"></div>
-      <h1>Rentals</h1>
-      <div id="rental_detail">This is some text that describes gerneral information about rentals
-       and how the pricing works. It doesn't need to be really long, but it should be long enough
-       so that there are a few lines on the largest view. I am not sure how much text that will be
-       but this should be almost enough right here.
-      </div>
-      <h2>Options</h2>
-      <div id="rentals">
-
-      </div>
+   <main>
+      
+      
    </main>
    <footer>
-      <h2>Contact Us</h2>
-      <div id="footer_name">Scoots Inc.<br>
-         1515 Beach Front<br>
-         Cozumel<br>
-         Mexico
-      </div>
-      <div id="footer_phone">Phone: 9-999-9999<br>
-         Fax: 9-999-9999<br>
-         Email: info@scoots.com
-      </div>
-
-      <img id="social" src="images/social.jpg" alt="social">
+      &#169; <span id="year"></span> | Trenton South | Oklahoma | <a id="byui_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+      <span id="today"></span>
    </footer>
 </div>
  <script src="./js/site.js"></script>
@@ -68,8 +47,7 @@
           families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
         }
       });
-      //buildChart();
-      buildRates();
+      buildRentals();
     </script>
 </body>
 </html>  

@@ -6,9 +6,6 @@
    main {
       grid-template-columns: 1fr 1fr 1fr;
    }
-   #reservations_main {
-      margin: 20px;
-    }
    #div_call_to_action {
       grid-column: 1/4;
    }
@@ -16,6 +13,7 @@
       position: relative;
       left: 33%;
    }
+
    #home_welcome {
       font-size: 1.2em;
       grid-column: 3;
@@ -23,10 +21,7 @@
       left: -33%;
    }
    #logo {
-      width:600px;
-   }
-   #logo img {
-      width: 600px;
+      width:740px;
    }
    #cWeather {
       grid-column: 3;
@@ -45,19 +40,12 @@
    #we_rent {
       grid-column: 1/4;
    }
-
    /* Reservations */
-
-   .form-group label.right-inline {
-      text-align: right;  
-      padding-right: 8px;
-      padding-left: 10px;
+   #chart {
+      grid-column: 1/4;
+      margin-bottom: 20px;
     }
-    .form-group {
-      flex-direction: row;
-    }
-    .form-group .input-control {
-      margin-top: -4px;
-      max-width: 350px;
-    }
+    #agreement {
+      grid-column: 1/4;
+   }
 }

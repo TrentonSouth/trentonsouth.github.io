@@ -1,108 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-   <meta name="description" content="Home">
-   <title>Scoot - Home</title>
-   <link rel="shortcut icon" href="/favicon.ico">
-   <link rel="stylesheet" href="./css/normalize.css">
-   <link rel="stylesheet" href="./css/small.css">
-   <link rel="stylesheet" href="./css/medium.css">
-   <link rel="stylesheet" href="./css/large.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Home">
+  <title>Scoot - Home</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
 </head>
-
 <body>
    <div id="content">
-      <header>
-         <div id="logo">
-            <picture>
-               <source media="(max-width: 500px)" srcset="./images/logo_small.jpg">
-               <source media="(max-width: 1000px)" srcset="./images/logo_medium.jpg">
-               <img src="./images/logo_large.jpg" alt="Scoots Logo">
-            </picture>
-         </div>
-         <nav>
-            <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span
-                  id="close" class="fade_out">&Otimes;</span></button>
-            <ul id="main_nav" class="nav_hidden">
-               <li><a class="active" title="Home" href="./">Home</a></li>
-               <li><a title="Rentals" href="./rentals.html">Rentals</a></li>
-               <li><a title="Tours" href="./tours.html">Tours</a></li>
-               <li><a title="Reservations" href="./reservations.html">Reservations</a></li>
-               <li><a title="Contact Us" href="./contact.html">Contact Us</a></li>
-            </ul>
-         </nav>
-      </header>
-      <main id="home_main">
-         <!-- Home Welcome -->
-         <div id="home_welcome">
-            <div class="center bold">Welcome to Scoots!</div>
-            <div>We are your one stop shop for touring Cozumel. Lorem ipsum dolor sit omet, consectetur odibiscing elit.
-               Fusce at loreet nibh.
-               Proin sodales malesuado er Lorem ipsum dolor sit omet, consectetur odibiscing elit. Fusce at loreet nibh.
-            </div>
-         </div>
-         <div id="div_image_rotate">
-            <picture>
-               <source id="image_source" media="(max-width: 400px)" srcset="./images/rotate/scooters_small.jpg">
-               <img id="image_rotate" src="./images/rotate/scooters_large.jpg" alt="Scooters">
-            </picture>
-         </div>
-         <div id="div_call_to_action">
-            <button type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up
-               quickly! Reserve yours now!</button>
-         </div>
-         <!-- Weather Area -->
-
-         <fieldset id="pdcWeather">
-            <legend>Playa del Carmen</legend>
-            <div>Temperature: <span id="pTemp"></span>&deg;</div>
-            <div>Conditions: <span id="pCurrent"></span></div>
-            <div>High: <span id="pHigh"></span>&deg;</div>
-            <div>Humidity: <span id="pHumidity">%</span></div>
-            <div>Wind Speed: <span id="pWindspeed"></span> mph</div>
-            <div class="view_forecast"><a href="#">View 5 Day Forecast</a></div>
-         </fieldset>
-         <fieldset id="cWeather">
-            <legend>Puerta Maya</legend>
-            <div>Temperature: <span id="cTemp"></span>&deg;</div>
-            <div>Conditions: <span id="cCurrent"></span></div>
-            <div>High: <span id="cHigh"></span>&deg;</div>
-            <div>Humidity: <span id="cHumidity"></span>%</div>
-            <div>Wind Speed: <span id="cWindspeed"></span> mph</div>
-            <div class="view_forecast"><a href="#">View 5 Day Forecast</a></div>
-         </fieldset>
-
-         <h1 id="we_rent">We Rent</h1>
-      </main>
-      <footer>
-         <h2>Contact Us</h2>
-         <div id="footer_name">Scoots Inc.<br>
-            1515 Beach Front<br>
-            Cozumel<br>
-            Mexico
-         </div>
-         <div id="footer_phone">Phone: 9-999-9999<br>
-            Fax: 9-999-9999<br>
-            Email: info@scoots.com
-         </div>
-
-         <img id="social" src="images/social.jpg" alt="social">
-      </footer>
+   <header>
+      <div id="logo">
+      <picture>
+         <source media="(max-width: 500px)" srcset="./images/logo_small.jpg">
+         <source media="(max-width: 1000px)" srcset="./images/logo_medium.jpg">
+         <img src="./images/logo_large.jpg" alt="Scoots Logo">
+     </picture>
    </div>
-   <script src="./js/site.js"></script>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button"><span id="ham" class="fade_in">&#9776; Menu</span><span id="close" class="fade_out">&Otimes;</span></button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a class="active" title="Home" href="./">Home</a></li>
+            <li><a title="Rentals" href="./rentals.html">Rentals</a></li>
+            <li><a title="Tours" href="./tours.html">Tours</a></li>
+            <li><a title="Reservations" href="./reservations.html">Reservations</a></li>
+            <li><a title="Contact Us" href="./contact.html">Contact Us</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main id="home_main">
+      <!-- Home Welcome -->
+      <div id="home_welcome">
+         <div class="center bold">Welcome to Scoots!</div>
+         <div>We are your one stop shop for touring Cozumel. Lorem ipsum dolor sit omet, consectetur odibiscing elit. Fusce at loreet nibh. 
+            Proin sodales malesuado er Lorem ipsum dolor sit omet, consectetur odibiscing elit. Fusce at loreet nibh. 
+         </div>
+      </div>
+      <div id="div_image_rotate">
+         <picture>
+            <source id="image_source" media="(max-width: 400px)" srcset="./images/rotate/scooters_small.jpg">
+            <img id="image_rotate" src="./images/rotate/scooters_large.jpg" alt="Scooters">
+        </picture>
+      </div>
+      <div id="div_call_to_action">
+         <button type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up quickly! Reserve yours now!</button>
+      </div>
+<!-- Weather Area -->
+
+<fieldset id="pdcWeather">
+   <legend>Playa del Carmen</legend>
+   <div>Temperature: <span id="pTemp"></span>&deg;</div>
+   <div>Conditions: <span id="pCurrent"></span></div>
+   <div>High: <span id="pHigh"></span>&deg;</div>
+   <div>Humidity: <span id="pHumidity"></span>%</div>
+   <div>Wind Speed: <span id="pWindspeed"></span> mph</div>
+   <div class="view_forecast"><a href="#">View 5 Day Forecast</a></div>
+</fieldset>
+<fieldset id="cWeather">
+   <legend>Puerta Maya</legend>
+   <div>Temperature: <span id="cTemp"></span>&deg;</div>
+   <div>Conditions: <span id="cCurrent"></span></div>
+   <div>High: <span id="cHigh"></span>&deg;</div>
+   <div>Humidity: <span id="cHumidity">%</span>%</div>
+   <div>Wind Speed: <span id="cWindspeed"></span> mph</div>
+   <div class="view_forecast"><a href="#">View 5 Day Forecast</a></div>
+</fieldset>
+
+      <h1 id="we_rent">We Rent</h1>
+   </main>
+   <footer>
+     <h2>Contact Us</h2>
+     <div id="footer_name">Scoots Inc.<br>
+   1515 Beach Front<br>
+   Cozumel Mexico
+   </div>
+   <div id="footer_phone">Phone: 9-999-9999<br>
+      Fax: 9-999-9999<br>
+      Email: info@scoots.com
+   </div>
+
+   <img id="social" src="images/social.jpg" alt="social">
+   </footer>
+</div>
+ <script src="./js/site.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
    <script>
       WebFont.load({
-         google: {
-            families: ['Nanum Gothic', 'Balsamiq Sans', 'Permanent Marker']
-         }
+        google: {
+          families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
+        }
       });
       cozumelWeather()
       playaDelCarmenWeather()
-   </script>
+    </script>
 </body>
-
-</html>
+</html>  

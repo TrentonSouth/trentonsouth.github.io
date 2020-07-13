@@ -46,32 +46,7 @@ function buildChart() {
    }
 }
 
-function buildRates() {
-   if (data === undefined) {
-      setTimeout(buildRates, 200);
-   } else {
-      let html = "";
-      data.types.forEach(type => {
-         type.rentals.forEach(rental => {
-            html += '<h3>' + rental.rental_type + '</h3>';
-            html += '<div><img class="rental_image" src="' + rental.image + '"></div>';
-            html += '<div class="rental_detail">' + rental.description  + '</div>';
-            html += '<div class="rental_price">';
-            html += 'Max Persons - ' + rental.max_persons + '<br><br>';
-            html += '<span class="rental_price_lable">1/2 Day Reserved</span> $' + rental.pricing.reservation.half_day + '<br>';
-            html += '<span class="rental_price_lable">Full Day Reserved</span> $' + rental.pricing.reservation.full_day + '<br>';
-            html += '<span class="rental_price_lable">1/2 Day Walk-in</span> $' + rental.pricing.walk_in.half_day + '<br>';
-            html += '<span class="rental_price_lable">Full Day Walk-in</span> $' + rental.pricing.walk_in.full_day + '<br>';
-            html += '</div>';
-            html += '<div><button class="rent_button">Rent a ' + rental.rental_type + '</button></div>';
-            html += '<hr class="rental_hr">';
-         })
-      });
-      document.getElementById('rentals').innerHTML = html;
-   }
-}
 
-buildRentals();
 function buildRentals() {
    if (data === undefined) {
       setTimeout(buildRentals, 200);
