@@ -47,7 +47,7 @@
         </picture>
       </div>
       <div id="div_call_to_action">
-         <button type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up quickly! Reserve yours now!</button>
+         <button class="button" type="button" id="call_to_action" onclick="window.location='reservations.html'">Rentals fill up quickly! Reserve yours now!</button>
       </div>
 <!-- Weather Area -->
 
@@ -58,7 +58,7 @@
    <div>High: <span id="pHigh"></span>&deg;</div>
    <div>Humidity: <span id="pHumidity"></span>%</div>
    <div>Wind Speed: <span id="pWindspeed"></span> mph</div>
-   <div class="view_forecast"><a href="#">View 5 Day Forecast</a></div>
+   <div class="view_forecast"><button class="button" onclick="showCozumelForecast()">View 5 Day Forecast</button></div>
 </fieldset>
 <fieldset id="cWeather">
    <legend>Puerta Maya</legend>
@@ -67,8 +67,88 @@
    <div>High: <span id="cHigh"></span>&deg;</div>
    <div>Humidity: <span id="cHumidity">%</span>%</div>
    <div>Wind Speed: <span id="cWindspeed"></span> mph</div>
-   <div class="view_forecast"><a href="#">View 5 Day Forecast</a></div>
+   <div class="view_forecast"><button class="button" onclick="showPDCForecast()">View 5 Day Forecast</button></div>
 </fieldset>
+
+
+<section id="cozumel_forecast">
+   <h3>Cozumel 5 Day Forecast</h3>
+
+      <div class="forecast" id="forecast1">
+          <h3 id="c_day1">Day 1</h3>
+          <div><img src="#" alt="" id='c_icon1'></div>
+          <div id="c_temp1"></div>
+          <div id="c_condition1"></div>
+          <div id="c_weather1"></div>
+      </div>
+      <div class="forecast" id="forecast2">
+          <h3 id="c_day2">Day 2</h3>
+          <div><img src="#" alt="" id='c_icon2'></div>
+          <div id="c_temp2"></div>
+          <div id="c_condition2"></div>
+          <div id="c_weather2"></div>
+      </div>
+      <div class="forecast" id="forecast3">
+          <h3 id="c_day3">Day 3</h3>
+          <div><img src="#" alt="" id='c_icon3'></div>
+          <div id="c_temp3"></div>
+          <div id="c_condition3"></div>
+          <div id="c_weather3"></div>
+      </div>
+      <div class="forecast" id="forecast4">
+          <h3 id="c_day4">Day 4</h3>
+          <div><img src="#" alt="" id='c_icon4'></div>
+          <div id="c_temp4"></div>
+          <div id="c_condition4"></div>
+          <div id="c_weather4"></div>
+      </div>
+      <div class="forecast" id="forecast5">
+          <h3 id="c_day5">Day 5</h3>
+          <div><img src="#" alt="" id='c_icon5'></div>
+          <div id="c_temp5"></div>
+          <div id="c_condition5"></div>
+          <div id="c_weather5"></div>
+      </div>
+</section>
+
+<section id="pdc_forecast">
+   <h3>Playa Del Carmen 5 Day Forecast</h3>
+      <div class="forecast" id="forecast1">
+          <h3 id="p_day1">Day 1</h3>
+          <div><img src="#" alt="" id='p_icon1'></div>
+          <div id="p_temp1"></div>
+          <div id="p_condition1"></div>
+          <div id="p_weather1"></div>
+      </div>
+      <div class="forecast" id="forecast2">
+          <h3 id="p_day2">Day 2</h3>
+          <div><img src="#" alt="" id='p_icon2'></div>
+          <div id="p_temp2"></div>
+          <div id="p_condition2"></div>
+          <div id="p_weather2"></div>
+      </div>
+      <div class="forecast" id="forecast3">
+          <h3 id="p_day3">Day 3</h3>
+          <div><img src="#" alt="" id='p_icon3'></div>
+          <div id="p_temp3"></div>
+          <div id="p_condition3"></div>
+          <div id="p_weather3"></div>
+      </div>
+      <div class="forecast" id="forecast4">
+          <h3 id="p_day4">Day 4</h3>
+          <div><img src="#" alt="" id='p_icon4'></div>
+          <div id="p_temp4"></div>
+          <div id="p_condition4"></div>
+          <div id="p_weather4"></div>
+      </div>
+      <div class="forecast" id="forecast5">
+          <h3 id="p_day5">Day 5</h3>
+          <div><img src="#" alt="" id='p_icon5'></div>
+          <div id="p_temp5"></div>
+          <div id="p_condition5"></div>
+          <div id="p_weather5"></div>
+      </div>
+</section>
 
       <h1 id="we_rent">We Rent</h1>
    </main>
@@ -94,8 +174,11 @@
           families: ['Nanum Gothic', 'Balsamiq Sans','Permanent Marker']
         }
       });
-      cozumelWeather()
-      playaDelCarmenWeather()
+      cozumelWeather();
+      playaDelCarmenWeather();
+      buildCozumelForecast();
+      buildPlayaDelCarmenForecast();
+      buildRentals();
     </script>
 </body>
 </html>  

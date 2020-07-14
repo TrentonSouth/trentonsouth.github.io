@@ -6,6 +6,9 @@
    main {
       grid-template-columns: 1fr 1fr 1fr;
    }
+   #cozumel_forecast, #pdc_forecast {
+      grid-column: 1/4;
+   }
    #div_call_to_action {
       grid-column: 1/4;
    }
@@ -40,6 +43,11 @@
    #we_rent {
       grid-column: 1/4;
    }
+   /* Rentals */
+   #rentals {
+      grid-column: 1 / 4;
+      grid-template-columns: 1fr 1fr 1fr;
+   }   
    /* Reservations */
    #chart {
       grid-column: 1/4;

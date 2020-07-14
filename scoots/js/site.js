@@ -46,6 +46,31 @@ function buildChart() {
    }
 }
 
+function buildRates() {
+      if (data === undefined) {
+         setTimeout(buildRates, 200);
+      } else {
+         let html = "";
+         data.types.forEach(type => {
+            type.rentals.forEach(rental => {
+               html += '<div><h3>' + rental.rental_type + '</h3>';
+               html += '<div><img class="rental_image" src="' + rental.image + '"></div>';
+               html += '<div class="rental_detail">' + rental.description  + '</div>';
+               html += '<div class="rental_price">';
+               html += 'Max Persons - ' + rental.max_persons + '<br><br>';
+               html += '<span class="rental_price_lable">1/2 Day Reserved</span> $' + rental.pricing.reservation.half_day + '<br>';
+               html += '<span class="rental_price_lable">Full Day Reserved</span> $' + rental.pricing.reservation.full_day + '<br>';
+               html += '<span class="rental_price_lable">1/2 Day Walk-in</span> $' + rental.pricing.walk_in.half_day + '<br>';
+               html += '<span class="rental_price_lable">Full Day Walk-in</span> $' + rental.pricing.walk_in.full_day + '<br>';
+               html += '</div>';
+               html += '<div><button class="rent_button">Rent a ' + rental.rental_type + '</button></div>';             
+               html += '</div>';
+               html += '<hr class="rental_hr">';
+            })
+         });
+         document.getElementById('rentals').innerHTML = html;
+      }
+   }
 
 function buildRentals() {
    if (data === undefined) {
@@ -122,4 +147,90 @@ fetch(apiURL)
    document.getElementById('pHumidity').innerHTML = town.main.humidity;
    document.getElementById('pCurrent').innerHTML = description.charAt(0).toUpperCase() + description.slice(1);
  });
+}
+
+/* 5 day forecasts */
+function buildCozumelForecast() {
+   url ="https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
+   fetch(url)
+   .then((response) => response.json())
+   .then((town) => {
+      const townList = town.list;
+      let daycount = 0;
+      for (let i = 0; i < town.list.length; i++ ) {
+         let day = townList[i].dt_txt;
+         if (day.substr(11, 19) == '12:00:00') {
+            daycount += 1;
+            let dateParts = day.substr(0,10).split('-');
+            let month = monthAbbrNames[+dateParts[1]];
+            let date = month + " " + +dateParts[2];
+            let dateElement = 'c_day' + daycount;
+            document.getElementById(dateElement).innerHTML = date;
+
+            // Get description
+            let descriptionLower = townList[i].weather[0].description;
+            let description = descriptionLower.charAt(0).toUpperCase() + descriptionLower.slice(1);
+            let descriptionElement = 'c_condition' + daycount;
+            document.getElementById(descriptionElement).innerHTML = description;
+
+            // Get high
+            let temp = Math.round(townList[i].main.temp_max) + " &#176;F";
+            let tempElement = 'c_temp' + daycount;
+            document.getElementById(tempElement).innerHTML = temp;
+
+            // Get icon
+            const imagesrc = 'https://openweathermap.org/img/w/' + townList[i].weather[0].icon + '.png';
+            let imageElement = 'c_icon' + daycount;
+            document.getElementById(imageElement).setAttribute('src', imagesrc);
+            document.getElementById(imageElement).setAttribute('alt', description);
+         }
+      }
+   });
+}
+
+function buildPlayaDelCarmenForecast() {
+   url ="https://api.openweathermap.org/data/2.5/forecast?id=3521342&units=imperial&APPID=f5a48cab6fa8273b6bd8e489128e73b5";
+   fetch(url)
+   .then((response) => response.json())
+   .then((town) => {
+      const townList = town.list;
+      let daycount = 0;
+      for (let i = 0; i < town.list.length; i++ ) {
+         let day = townList[i].dt_txt;
+         if (day.substr(11, 19) == '12:00:00') {
+            daycount += 1;
+            let dateParts = day.substr(0,10).split('-');
+            let month = monthAbbrNames[+dateParts[1]];
+            let date = month + " " + +dateParts[2];
+            let dateElement = 'p_day' + daycount;
+            document.getElementById(dateElement).innerHTML = date;
+
+            // Get description
+            let descriptionLower = townList[i].weather[0].description;
+            let description = descriptionLower.charAt(0).toUpperCase() + descriptionLower.slice(1);
+            let descriptionElement = 'p_condition' + daycount;
+            document.getElementById(descriptionElement).innerHTML = description;
+
+            // Get high
+            let temp = Math.round(townList[i].main.temp_max) + " &#176;F";
+            let tempElement = 'p_temp' + daycount;
+            document.getElementById(tempElement).innerHTML = temp;
+
+            // Get icon
+            const imagesrc = 'https://openweathermap.org/img/w/' + townList[i].weather[0].icon + '.png';
+            let imageElement = 'p_icon' + daycount;
+            document.getElementById(imageElement).setAttribute('src', imagesrc);
+            document.getElementById(imageElement).setAttribute('alt', description);
+         }
+      }
+   });
+}
+
+function showCozumelForecast() {
+   document.getElementById('cozumel_forecast').style.display = 'grid';
+   document.getElementById('pdc_forecast').style.display = 'none';
+}
+function showPDCForecast() {
+   document.getElementById('cozumel_forecast').style.display = 'none';
+   document.getElementById('pdc_forecast').style.display = 'grid';
 }
