@@ -63,7 +63,7 @@ function buildRates() {
                html += '<span class="rental_price_lable">1/2 Day Walk-in</span> $' + rental.pricing.walk_in.half_day + '<br>';
                html += '<span class="rental_price_lable">Full Day Walk-in</span> $' + rental.pricing.walk_in.full_day + '<br>';
                html += '</div>';
-               html += '<div><button class="rent_button">Rent a ' + rental.rental_type + '</button></div>';             
+               html += '<div><button class="button3">Rent a ' + rental.rental_type + '</button></div>';             
                html += '</div>';
                html += '<hr class="rental_hr">';
             })
@@ -233,4 +233,10 @@ function showCozumelForecast() {
 function showPDCForecast() {
    document.getElementById('cozumel_forecast').style.display = 'none';
    document.getElementById('pdc_forecast').style.display = 'grid';
+}
+
+function showChart() {
+   document.getElementById('chart').style.display = 'block';
+   document.getElementById('btnChart').style.display = 'none';
+   
 }

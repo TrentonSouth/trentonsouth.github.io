@@ -120,6 +120,18 @@ nav ul {
   font-size: .8em;
   padding: 10px 0 10px 0;
 }
+.button2, .button3 {
+  background-color: #CCC;
+  color: #000;
+  width: 60%;
+  border-radius: 10px;
+  font-size: .8em;
+  padding: 10px 0 10px 0;
+}
+.button3 {
+  width: 90%;
+  margin-top:20px;
+}
 .center {
   text-align: center;
 }
@@ -144,10 +156,15 @@ nav ul {
 
 #cozumel_forecast, #pdc_forecast {
   display: none;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+#cozumel_forecast h3, #pdc_forecast h3 {
+  grid-column: 1 /3;
 }
 #div_call_to_action {
   text-align: center;
-  margin-top:15px;
+  margin:15px 0 25px 0;
 }
 #home_welcome {
   background-color: #065c0a;
@@ -158,7 +175,10 @@ nav ul {
 #home_welcome > div {
   padding: 10px;
 }
-
+#locations {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
 .rental_image_div {
   width: 50%;
   float:left;
@@ -183,13 +203,33 @@ nav ul {
   grid-template-columns: 1fr;
 }
 /* Reservations */
-
-#chart {
-  font-size: .8em;
+#btnChart {
+  margin-left: 20%;
+  margin-bottom: 25px;
 }
+#chart {
+  display: none;
+  font-size: .8em;
+  margin-bottom:20px;
+}
+
 #main_reservations label {
   display: inline-block;
   width:120px;
+}
+
+#main_tours {
+  grid-template-columns: 1fr;
+}
+#main_tours picture img {
+  width: 100%;
+}  
+
+.input-control {
+  width: 100%;
+}
+.form-group {
+  margin: 5px 0 5px 0;
 }
 
 /* Footer */
