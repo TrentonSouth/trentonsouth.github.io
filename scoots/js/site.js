@@ -240,3 +240,12 @@ function showChart() {
    document.getElementById('btnChart').style.display = 'none';
    
 }
+
+function initMap() {
+   
+   parts = window.location.pathname.split('/');
+   page = parts[parts.length - 1];
+   let coords = {lat: 20.6296, lng: -87.0739};
+   
+   let map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: coords});
+}
