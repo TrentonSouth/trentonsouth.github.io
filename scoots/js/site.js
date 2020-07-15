@@ -6,7 +6,7 @@ const monthAbbrNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "
 const day = date.getDay();
 const dayName = days[day];
 const month = date.getMonth();
-const monthName = monthNames[month];
+const monthName = monthNames[month-1];
 const year = date.getFullYear();
 //document.getElementById("today").innerHTML = dayName + ', ' + date.getDate() + ' ' + monthName  + ' ' + year;
 //document.getElementById("year").innerHTML = year;
@@ -63,7 +63,7 @@ function buildRates() {
                html += '<span class="rental_price_lable">1/2 Day Walk-in</span> $' + rental.pricing.walk_in.half_day + '<br>';
                html += '<span class="rental_price_lable">Full Day Walk-in</span> $' + rental.pricing.walk_in.full_day + '<br>';
                html += '</div>';
-               html += '<div><button class="button3">Rent a ' + rental.rental_type + '</button></div>';             
+               html += '<div><button class="button3" onclick="javascript:window.location.href=\'reservations.html\'">Reserve a ' + rental.rental_type + '</button></div>';             
                html += '</div>';
                html += '<hr class="rental_hr">';
             })
@@ -159,7 +159,7 @@ function buildCozumelForecast() {
       let daycount = 0;
       for (let i = 0; i < town.list.length; i++ ) {
          let day = townList[i].dt_txt;
-         if (day.substr(11, 19) == '12:00:00') {
+         if (day.substr(11, 19) == '18:00:00') {
             daycount += 1;
             let dateParts = day.substr(0,10).split('-');
             let month = monthAbbrNames[+dateParts[1]];
@@ -197,7 +197,7 @@ function buildPlayaDelCarmenForecast() {
       let daycount = 0;
       for (let i = 0; i < town.list.length; i++ ) {
          let day = townList[i].dt_txt;
-         if (day.substr(11, 19) == '12:00:00') {
+         if (day.substr(11, 19) == '18:00:00') {
             daycount += 1;
             let dateParts = day.substr(0,10).split('-');
             let month = monthAbbrNames[+dateParts[1]];

@@ -2,7 +2,9 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   background-color: #fcfcfc;
 }
-
+button:hover {
+  cursor: pointer;
+}
 footer {
   background-color: #062d5c;
   color: #FBFBFB;
@@ -120,6 +122,7 @@ nav ul {
   font-size: .8em;
   padding: 10px 0 10px 0;
 }
+
 .button2, .button3 {
   background-color: #CCC;
   color: #000;
@@ -177,6 +180,9 @@ nav ul {
 }
 #locations {
   margin: 20px 0 20px 0;
+  text-align: center;
+}
+.forecast {
   text-align: center;
 }
 .rental_image_div {
