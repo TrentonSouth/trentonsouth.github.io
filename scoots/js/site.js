@@ -107,7 +107,7 @@ function toggle_nav() {
 }
 
 let images = ['jeep','road','beach','scooters'];
-rotateImage(0);
+
 function rotateImage(pos) {
    setTimeout(function() {
       document.getElementById('image_source').setAttribute('srcset','./images/rotate/' + images[pos] + '_small.jpg');
@@ -242,10 +242,6 @@ function showChart() {
 }
 
 function initMap() {
-   
-   parts = window.location.pathname.split('/');
-   page = parts[parts.length - 1];
    let coords = {lat: 20.6296, lng: -87.0739};
-   
    let map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: coords});
 }

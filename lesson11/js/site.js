@@ -78,7 +78,6 @@ function initMap() {
 }
 
 
-
 function buildForecastDay(dayOfMonth, abbrMonth, image, desc, temp) {
    html = '<h3>' + abbrMonth + ' ' + dayOfMonth + '</h3>';
    html += '<div class="weather_icon_div"><img class="weather_icon" alt="' + desc + '" src="' + './images/' + image + '"></div>';

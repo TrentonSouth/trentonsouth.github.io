@@ -208,6 +208,10 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr;
 }
+/* Contact */
+#map {
+  display:none;
+}
 /* Reservations */
 #btnChart {
   margin-left: 20%;

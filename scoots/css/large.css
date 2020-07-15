@@ -47,21 +47,43 @@
       grid-column: 1/4;
    }
    /* Rentals */
+   #main_rentals h2 {
+      grid-column: 1/4;
+   }
+
    #rentals {
       grid-column: 1 / 4;
       grid-template-columns: 1fr 1fr 1fr;
+   }
+   #rental_conditions {
+      grid-column: 1/4;
    }   
+
+   /* Contact */
+   #main_contact h1 {
+      grid-column: 1 / 4;
+   }
+   #contact_intro {
+      grid-column: 2 / 4;
+   }
+   #send_message_div {
+      grid-column: 2/4;
+   }
+
    /* Reservations */
+   #agreement {
+      grid-column: 1/4;
+   }   
    #btnChart {
       grid-column: 1/4;
       width: 30%;
       margin-left: 35%;
    }
+   #complete_reservation_div {
+      grid-column: 1/4;
+   }
    #chart {
       grid-column: 1/4;
       margin-bottom: 20px;
     }
-    #agreement {
-      grid-column: 1/4;
-   }
 }
