@@ -162,7 +162,7 @@ function buildCozumelForecast() {
          if (day.substr(11, 19) == '18:00:00') {
             daycount += 1;
             let dateParts = day.substr(0,10).split('-');
-            let month = monthAbbrNames[+dateParts[1]];
+            let month = monthAbbrNames[+dateParts[1]-1];
             let date = month + " " + +dateParts[2];
             let dateElement = 'c_day' + daycount;
             document.getElementById(dateElement).innerHTML = date;
@@ -200,7 +200,7 @@ function buildPlayaDelCarmenForecast() {
          if (day.substr(11, 19) == '18:00:00') {
             daycount += 1;
             let dateParts = day.substr(0,10).split('-');
-            let month = monthAbbrNames[+dateParts[1]];
+            let month = monthAbbrNames[+dateParts[1]-1];
             let date = month + " " + +dateParts[2];
             let dateElement = 'p_day' + daycount;
             document.getElementById(dateElement).innerHTML = date;
