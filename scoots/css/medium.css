@@ -94,7 +94,7 @@
     #main_reservations h2 {
        grid-column: 1/4;
     }
-    #numdays {
+    #numdays, #rental_type {
        width: 183px;
     }
     .input-control {

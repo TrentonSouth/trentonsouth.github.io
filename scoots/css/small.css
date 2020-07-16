@@ -227,7 +227,7 @@ nav ul {
   display: inline-block;
   width:120px;
 }
-
+ /* Tours */
 #main_tours {
   grid-template-columns: 1fr;
 }

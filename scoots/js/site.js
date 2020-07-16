@@ -98,6 +98,24 @@ function buildRentals() {
    }
 }
 
+function loadRentalTypes() {
+   if (data === undefined) {
+      setTimeout(loadRentalTypes, 200);
+   } else {
+      let select = document.getElementById('rental_type');
+      let option = document.createElement("option");
+      option.innerText = "Select Type";
+      select.appendChild(option);
+      data.types.forEach(type => {
+         type.rentals.forEach(rental => {
+            option = document.createElement("option");
+            option.innerText = rental.rental_type;
+            select.appendChild(option);
+         })
+      });
+   }
+}
+
 function toggle_nav() {
    document.getElementById("main_nav").classList.toggle("nav_hidden");
    document.getElementById("ham").classList.toggle("fade_out");

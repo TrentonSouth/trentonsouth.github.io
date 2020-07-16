@@ -32,8 +32,10 @@
          </ul>
       </nav>
    </header>
+   <form method="POST" action="confirmation.html">
    <main id="main_reservations">
-      <button id="btnChart" class="button2" onclick="showChart()">View Pricing Chart</button>
+      
+      <button id="btnChart" type="button" class="button2" onclick="showChart()">View Pricing Chart</button>
       <div id="chart"></div>
       <div class="form-group">
          <label for="date">Rental Date</label>
@@ -41,7 +43,7 @@
       </div>
      
       <div class="form-group">   
-         <label for="numdays" class="right-inline">Duration</label>
+         <label for="numdays">Duration</label>
          <select id="numdays" class="input-control">
             <option>Half Day</option>
             <option>1 Day</option>
@@ -53,10 +55,13 @@
             <option>1 Week</option>
          </select>
        </div>
-      
+       <div class="form-group">
+         <label for="rental_type">Rental Type</label>
+         <select id="rental_type" class="input-control"></select>
+      </div>
       <div class="form-group">
          <label for="first_name">First Name</label>
-         <input id="first_name" type="text" class="input-control" />
+         <input type="text" id="numdays" class="input-control" />
       </div>
      
       <div class="form-group">
@@ -85,6 +90,10 @@
        <div class="form-group">
          <label for="cruise_line">Cruise Line</label>
          <input id="cruise_line" type="text" class="input-control" />
+       </div>
+       <div class="form-group">
+         <label for="comments">Comments</label>
+         <input id="comments" type="text" class="input-control" />
        </div>
 
        <h2>Rental Agreement</h2>
@@ -125,6 +134,7 @@
       </div>
       <div id="complete_reservation_div" class="center"><button class="button">Complete My Reservation</button></div>
    </main>
+</form>
    <footer>
       <h2>Contact Us</h2>
       <div id="footer_name">Scoots Inc.<br>
@@ -149,6 +159,7 @@
         }
       });
       buildChart();
+      loadRentalTypes();
     </script>
 </body>
 </html>  
