@@ -260,6 +260,10 @@ function showChart() {
 }
 
 function initMap() {
-   let coords = {lat: 20.6296, lng: -87.0739};
-   let map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: coords});
+   let pdcCoords = {lat: 20.6296, lng: -87.0739};
+   let pmCoords = {lat: 20.4757, lng: -86.9753};
+   let coords = {lat: 20.5750, lng: -87.0739};
+   let map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: coords});
+   var pdc = new google.maps.Marker({position: pdcCoords, map: map});
+   var pm = new google.maps.Marker({position: pmCoords, map: map});
 }

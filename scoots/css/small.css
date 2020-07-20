@@ -35,6 +35,15 @@ h6 {
   font-family: 'Balsamiq Sans', cursive;
 }
 
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  position: relative;
+  top: -15px;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -226,6 +235,18 @@ nav ul {
 #main_reservations label {
   display: inline-block;
   width:120px;
+}
+
+/* Resources */
+
+#main_resources {
+  display:block;
+  text-align: center;
+}
+
+#main_resources div img {
+  width: 100%;
+  max-width: 500px;
 }
  /* Tours */
 #main_tours {
