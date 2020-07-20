@@ -191,6 +191,9 @@ nav ul {
   margin: 20px 0 20px 0;
   text-align: center;
 }
+.maplink {
+  font-size: .8em;
+}
 .forecast {
   text-align: center;
 }

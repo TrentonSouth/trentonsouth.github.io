@@ -34,14 +34,12 @@
       position: relative;
       left: -33%;
       margin-top: 20px;
-      font-size: 1.2em;
    }
    #pdcWeather {
       grid-column: 1;
       position: relative;
       left: 33%;
       margin-top: 20px;
-      font-size: 1.2em;
    }   
    #we_rent {
       grid-column: 1/4;
