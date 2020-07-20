@@ -32,9 +32,22 @@
          </ul>
       </nav>
    </header>
-   <main>
+   <main id="main_confirmation">
       <h1>Confirmation</h1>
-      
+      <div>Thank you for making your reservation with us. The only think left to do is pay your deposit. For your convenience 
+         we accept Google Pay, cash, credit card, debit card, or PayPal. Once your payment is secured, you will recieve
+         an email from us confirming your reservation. Please be sure to check your spam folder as to not miss 
+         the email from us. It will have your confirmation number which you will need when picking up your rental. If you select
+         cash, we will complete your reservation in person when you drop the deposit off.
+      </div>
+      <div id="payment_type">
+         <label for="cc">Credit Card</label> <input id="cc" type="radio" name="payment" value="Credit Card" checked> -:-
+         <label for="dc">Debit Card</label> <input id="dc" type="radio" name="payment" value="Debit Card">  -:-
+         <label for="cash">Cash</label> <input id="cash" type="radio" name="payment" value="Cash">  -:-
+         <label for="google_pay">Google Pay</label> <input id="google_pay" type="radio" name="payment" value="Google Pay">  -:-
+         <label for="paypal">PayPal</label> <input id="paypal" type="radio" name="payment" value="PayPal"> <br><br>
+         <input onclick="javascript:alert('This would go to a 3rd party payment page')" type="button" class="button2" value="Continue to Payment">
+      </div>
    </main>
 
    <footer>

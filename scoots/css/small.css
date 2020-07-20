@@ -215,6 +215,18 @@ nav ul {
   text-align: center;
   margin-top:15px;
 } 
+/* Confirmation */
+
+#main_confirmation {
+  display:block;
+  text-align: left;
+}
+#main_confirmation h1 {
+  text-align: center;
+}
+#payment_type {
+  margin-top: 25px;
+}
 /* Rentals */
 #rentals {
   display: grid;
