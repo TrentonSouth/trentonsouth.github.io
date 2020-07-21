@@ -177,7 +177,7 @@ function buildCozumelForecast() {
       let daycount = 0;
       for (let i = 0; i < town.list.length; i++ ) {
          let day = townList[i].dt_txt;
-         if (day.substr(11, 19) == '18:00:00') {
+         if (day.substr(11, 19) == '12:00:00') {
             daycount += 1;
             let dateParts = day.substr(0,10).split('-');
             let month = monthAbbrNames[+dateParts[1]-1];
@@ -215,7 +215,7 @@ function buildPlayaDelCarmenForecast() {
       let daycount = 0;
       for (let i = 0; i < town.list.length; i++ ) {
          let day = townList[i].dt_txt;
-         if (day.substr(11, 19) == '18:00:00') {
+         if (day.substr(11, 19) == '12:00:00') {
             daycount += 1;
             let dateParts = day.substr(0,10).split('-');
             let month = monthAbbrNames[+dateParts[1]-1];
